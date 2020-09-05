@@ -323,12 +323,12 @@
 ** Metal casting
 ** Silicon
 *** Links
-	https://www.youtube.com/watch?v=D1ALNg3z2gk
-	https://www.youtube.com/watch?v=AMgQ1-HdElM
+	https://www.youtube.com/watch?v=D1ALNg3z2gk - The Production Of Silicon | NTNU
+	https://www.youtube.com/watch?v=AMgQ1-HdElM - Silicon Wafer Production
 ** Similar mods
    https://forums.factorio.com/viewtopic.php?f=97&t=51868 - Xander Mod
 ** Coke
-   https://www.youtube.com/watch?v=ArUbB5KTmj0
+   https://www.youtube.com/watch?v=ArUbB5KTmj0 - SunCoke Cokemaking Process 3:00
    https://www2.cs.arizona.edu/patterns/weaving/articles/eb11_cltr.pdf
 ** Steel
    https://www.youtube.com/watch?v=9N6uXQ8KRYc
