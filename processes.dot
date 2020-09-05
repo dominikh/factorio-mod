@@ -1,0 +1,2195 @@
+digraph {
+	color=darkgreen
+
+	"Aluminium oxide"                  [label="Aluminium oxide\nAl₂O₃"                                                                  ]
+	"Aluminium"                        [label="Aluminium\nAl"                                                                           ]
+	"Ammonia"                          [label="Ammonia\nNH₃"                                                                            ]
+	"Anhydrite"                        [                                                  fillcolor=brown, style=filled                 ]
+	"Anthracite ore"                   [                                                  fillcolor=brown, style=filled                 ]
+	"Antimony trisulfide"              [label="Antimony trisulfide\nSb₂S₃"                                                              ]
+	"Barium nitrate"                   [label="Barium nitrate\nBa(NO₃)₂"                                                                ]
+	"Basic kiln"                       [                                                  fillcolor=pink,  style=filled, shape="house"  ]
+	"Benzene"                          [label="Benzene\nC₆H₆"                                                                           ]
+	"Bismuth"                          [label="Bismuth\nBi"                                                                             ]
+	"Bituminous coal ore"              [                                                  fillcolor=brown, style=filled                 ]
+	"Boron"                            [label="Boron\nB"                                                                                ]
+	"Brick"                            [                                                  fillcolor=pink,  style=filled, shape="house"  ]
+	"Butadiene"                        [label="Butadiene\n(CH₂=CH)₂"                                                                    ]
+	"Butane"                           [label="Butane\nC₄H₁₀"                                                                           ]
+	"Butene"                           [label="Butene\nC₄H₈"                                                                            ]
+	"Calcium carbonate"                [label="Calcium carbonate\nCaCO₃"                                                                ]
+	"Calcium hydroxide"                [label="Calcium hydroxide (slaked lime)\nCa(OH)₂"                                                ]
+	"Calcium oxide"                    [label="Calcium oxide (quicklime)\nCaO"                                                          ]
+	"Calcium sulfate"                  [label="Calcium sulfate\nCaSO₄"                                                                  ]
+	"Calcium"                          [label="Calcium\nCa"                                                                             ]
+	"Carbon dioxide"                   [label="Carbon dioxide\nCO₂"                                                                     ]
+	"Carbon monoxide"                  [label="Carbon monoxide\nCO"                                                                     ]
+	"Carbon"                           [label="Carbon\nC"                                                                               ]
+	"Carnallite"                       [                                                  fillcolor=brown, style=filled                 ]
+	"Cellulose"                        [label="Cellulose\n(C₆H₁₀O₅)ₙ"                                                                   ]
+	"Chalk"                            [                                                  fillcolor=brown, style=filled                 ]
+	"Chlorine"                         [label="Chlorine\nCl"                                                                            ]
+	"Clay"                             [                                                                                                ]
+	"Copper nitrate"                   [label="Copper nitrate\nCu(NO₃)₂"                                                                ]
+	"Copper oxide ore"                 [                                                  fillcolor=brown, style=filled                 ]
+	"Copper sulfide ore"               [                                                  fillcolor=brown, style=filled                 ]
+	"Copper"                           [label="Copper\nCu"                                                                              ]
+	"Crude oil"                        [                                                  fillcolor=brown, style=filled                 ]
+	"Dibutyl phthalate"                [label="Dibutyl phthalate\nC₆H₄(CO₂C₄H₉)₂"                                                       ]
+	"Dimethyl ether"                   [label="Dimethyl ether\nCH₃OCH₃"                                                                 ]
+	"Dinitrogen tetroxide"             [label="Dinitrogen tetroxide\nN₂O₄"                                                              ]
+	"Direct shipping iron ore"         [                                                  fillcolor=brown, style=filled                 ]
+	"Durene"                           [label="Durene\nC₆H₂(CH₃)₄"                                                                      ]
+	"Ethane"                           [label="Ethane\nC₂H₆"                                                                            ]
+	"Ethanol"                          [label="Ethanol\nC₂H₆O"                                                                          ]
+	"Ethylbenzene"                     [label="Ethylbenzene\nC₆H₅CH₂CH₃"                                                                ]
+	"Ethylene"                         [label="Ethylene\nC₂H₄"                                                                          ]
+	"Formaldehyde"                     [label="Formaldehyde\nCH₂O"                                                                      ]
+	"Gold"                             [label="Gold\nAu"                                                                                ]
+	"Gypsum"                           [label="Gypsum\nCaSO₄·2H₂O",                       fillcolor=brown, style=filled                 ]
+	"Hematite ore"                     [                                                  fillcolor=brown, style=filled                 ]
+	"Hexafluorosilicic acid"           [label="Hexafluorosilicic acid\nH₂SiF₆"                                                          ]
+	"Hexylene glycol"                  [label="Hexylene glycol\n(CH₃)₂C(OH)CH₂CH(OH)CH₃"                                                ]
+	"Hydrochloric acid"                [label="Hydrochloric acid\nHCl"                                                                  ]
+	"Hydrogen peroxide"                [label="Hydrogen peroxide\nH₂O₂"                                                                 ]
+	"Hydrogen sulfide"                 [label="Hydrogen sulfide\nH₂S"                                                                   ]
+	"Hydrogen"                         [label="Hydrogen\nH",                              fillcolor=brown, style=filled                 ]
+	"Hydrogen"                         [label="Hydrogen\nH₂"                                                                            ]
+	"Lead fluorosilicate"              [label="Lead fluorosilicate\nPbSiF₆"                                                             ]
+	"Lead styphnate"                   [label="Lead styphnate\nC₆HN₃O₈Pb"                                                               ]
+	"Lead"                             [label="Lead\nPb"                                                                                ]
+	"Lead(II) thiocyanate"             [label="Lead(II) thiocyanate\nPb(SCN)₂"                                                          ]
+	"Lignite ore"                      [                                                  fillcolor=brown, style=filled                 ]
+	"Limestone"                        [                                                  fillcolor=brown, style=filled                 ]
+	"Magnesium"                        [label="Magnesium\nMg"                                                                           ]
+	"Magnetite ore"                    [                                                  fillcolor=brown, style=filled                 ]
+	"Manganese dioxide"                [label="Manganese dioxide\nMnO₂"                                                                 ]
+	"Marble"                           [                                                  fillcolor=brown, style=filled                 ]
+	"Mercury fulminate"                [label="Mercury fulminate\nHg(CNO)₂"                                                             ]
+	"Mercury"                          [label="Mercury\nHg"                                                                             ]
+	"Mesitylene"                       [label="Mesitylene\nC₆H₃(CH₃)₃"                                                                  ]
+	"Methane"                          [label="Methane\nCH₄"                                                                            ]
+	"Methanol"                         [label="Methanol\nCH₃OH"                                                                         ]
+	"Mirabilite"                       [                                                  fillcolor=brown, style=filled                 ]
+	"Module: Contact process catalyst" [                                                  fillcolor=green, style=filled, shape="octagon"]
+	"Module: Haber process catalyst"   [                                                  fillcolor=green, style=filled, shape="octagon"]
+	"Naphthalene"                      [label="Naphthalene\nC₁₀H₈"                                                                      ]
+	"Niter"                            [                                                  fillcolor=brown, style=filled                 ]
+	"Nitric acid"                      [label="Nitric acid\nHNO₃"                                                                       ]
+	"Nitrocellulose"                   [label="Nitrocellulose\n(C₆H₉(NO₂)O₅)ₙ"                                                          ]
+	"Nitrogen dioxide"                 [label="Nitrogen dioxide\nNO₂"                                                                   ]
+	"Nitrogen"                         [label="Nitrogen\nN₂"                                                                            ]
+	"Nitroglycerin"                    [label="Nitroglycerin\nC₃H₅N₃O₉"                                                                 ]
+	"Oleum"                            [label="Oleum\nySO₃·H₂O"                                                                         ]
+	"Oxygen"                           [label="Oxygen\nO₂",                               fillcolor=brown, style=filled                 ]
+	"Palladium"                        [label="Palladium\nPd"                                                                           ]
+	"Phosphorus"                       [label="Phosphorus\nP"                                                                           ]
+	"Platinum"                         [label="Platinum\nPt"                                                                            ]
+	"Potash"                           [                                                  fillcolor=brown, style=filled                 ]
+	"Potassium amyl xanthate"          [label="Potassium amyl xanthate\nCH₃(CH₂)₄OCS₂K"                                                 ]
+	"Potassium bicarbonate"            [label="Potassium bicarbonate\nKHCO₃"                                                            ]
+	"Potassium carbonate"              [label="Potassium carbonate\nK₂CO₃"                                                              ]
+	"Potassium chlorate"               [label="Potassium chlorate\nKClO₃"                                                               ]
+	"Potassium chloride"               [label="Potassium chloride\nKCl"                                                                 ]
+	"Potassium hydroxide"              [label="Potassium hydroxide\nKOH"                                                                ]
+	"Potassium manganate"              [label="Potassium manganate\nK₂MnO₄"                                                             ]
+	"Potassium nitrate"                [label="Potassium nitrate\nKNO₃"                                                                 ]
+	"Potassium oxide"                  [label="Potassium oxide\nK₂O"                                                                    ]
+	"Potassium permanganate"           [label="Potassium permanganate\nKMnO₄"                                                           ]
+	"Potassium peroxide"               [label="Potassium peroxide\nK₂O₂"                                                                ]
+	"Potassium superoxide"             [label="Potassium superoxide\nKO₂"                                                               ]
+	"Potassium"                        [label="Potassium\nK"                                                                            ]
+	"Propane"                          [label="Propane\nC₃H₈"                                                                           ]
+	"Propylene"                        [label="Propylene\nC₃H₆"                                                                         ]
+	"Pyrolusite"                       [                                                  fillcolor=brown, style=filled                 ]
+	"Quartz sand"                      [                                                  fillcolor=brown, style=filled                 ]
+	"Raw clay"                         [                                                  fillcolor=brown, style=filled                 ]
+	"Ruthenium(IV) oxide"              [label="Ruthenium(IV) oxide\nRuO₂"                                                               ]
+	"Seashells"                        [                                                  fillcolor=brown, style=filled                 ]
+	"Silicon dioxide"                  [label="Silicon dioxide (silica)\nSiO₂"                                                          ]
+	"Silicon tetrachloride"            [label="Silicon tetrachloride\nSiCl4"                                                            ]
+	"Silver chloride"                  [label="Silver chloride\nAgCl"                                                                   ]
+	"Silver nitrate"                   [label="Silver nitrate\nAgNO₃"                                                                   ]
+	"Silver oxide"                     [label="Silver oxide\nAg₂O"                                                                      ]
+	"Silver sulfide"                   [label="Silver sulfide\nAg₂S"                                                                    ]
+	"Silver"                           [label="Silver\nAg"                                                                              ]
+	"Sodium carbonate"                 [label="Sodium carbonate\nNa₂CO₃"                                                                ]
+	"Sodium chloride"                  [label="Sodium chloride\nNaCl"                                                                   ]
+	"Sodium hydroxide"                 [label="Sodium hydroxide\nNaOH"                                                                  ]
+	"Sodium nitrate"                   [label="Sodium nitrate\nNaNO₃"                                                                   ]
+	"Sodium sulfate"                   [label="Sodium sulfate\nNa₂SO₄"                                                                  ]
+	"Sodium sulfide"                   [label="Sodium sulfide\nNa₂S"                                                                     ]
+	"Sodium sulfite"                   [label="Sodium sulfite\nNa₂SO₃"                                                                  ]
+	"Steam"                            [                                                  fillcolor=brown, style=filled                 ]
+	"Stone pipe"                       [                                                  fillcolor=pink,  style=filled, shape="house"  ]
+	"Styrene"                          [label="Styrene\nC₆H₅CH=CH₂"                                                                     ]
+	"Subbituminous coal ore"           [                                                  fillcolor=brown, style=filled                 ]
+	"Sulfur dioxide"                   [label="Sulfur dioxide\nSO₂"                                                                     ]
+	"Sulfur trioxide"                  [label="Sulfur trioxide\nSO₃"                                                                    ]
+	"Sulfur"                           [label="Sulfur\nS",                                fillcolor=brown, style=filled                 ]
+	"Sulfuric acid"                    [label="Sulfuric acid\nH₂SO₄"                                                                    ]
+	"Sylvite"                          [                                                  fillcolor=brown, style=filled                 ]
+	"Tetrazine"                        [label="Tetrazine\nC₂H₂N₄"                                                                       ]
+	"Trichlorosilane"                  [label="Trichlorosilane\nHCl₃Si"                                                                 ]
+	"Trinitrotoluene"                  [label="Trinitrotoluene\nC₆H₂(NO₂)₃CH₃"                                                          ]
+	"Vanadium(V) oxide"                [label="Vanadium(V) oxide\nV₂O₅"                                                                 ]
+	"Water"                            [label="Water\nH₂O",                               fillcolor=brown, style=filled                 ]
+	"Wood ash"                         [                                                  fillcolor=brown, style=filled                 ]
+	"Wood"                             [                                                  fillcolor=brown, style=filled                 ]
+	"Wooden chest"                     [                                                  fillcolor=pink,  style=filled, shape="house"  ]
+	"Zinc oxide"                       [label="Zink oxide\nZnO"                                                                         ]
+	"Zinc"                             [label="Zinc\nZn"                                                                                ]
+	"i-butane"                         [label="i-butane\nHC(CH₃)₃"                                                                      ]
+	"n-butane"                         [label="n-butane\nC₄H₁₀"                                                                         ]
+	
+	// Coal
+	subgraph {
+		coking_20_1 [label="coking", shape="rect"]
+		condenser_scrubber_20_1 [label="condenser + scrubber", shape="rect"]
+		fractional_distillation_20_1 [label="fractional distillation", shape="rect"]
+		gas_separator_20_1 [label="gas separator", shape="rect"]
+		n_20_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_20_2 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_20_3 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_20_4 [label="...", shape="rect", fillcolor=blue, style=filled]
+		
+		// "Metallurgical coal is needed to make coke because it
+		// contains more carbon and less moisture than the thermal
+		// coals used in power plants."
+
+		"Anthracite ore" -> n_20_1
+		"Bituminous coal ore" -> n_20_2
+		"Subbituminous coal ore" -> n_20_3
+		"Lignite ore" -> n_20_4
+
+		n_20_1 -> "Anthracite"
+		n_20_2 -> "Bituminous coal"
+		n_20_3 -> "Subbituminous coal"
+		n_20_4 -> "Lignite"
+		
+		"Lignite" -> coking_20_1 [label="Produces shitty coke, but more coal tar"]
+		"Subbituminous coal" -> coking_20_1 [label="Produces shitty coke, but more coal tar"]
+		
+		// Anthracite lacks the pores to make good coke, and coal
+		// other than bituminous is too impure. Technically, only some
+		// bituminous coal is usable for making coke, but I'm not sure
+		// we really want to complicate this further.
+		"Bituminous coal" -> coking_20_1
+		coking_20_1 -> "Coke"
+		coking_20_1 -> "Coal tar"
+		"Coal tar" -> fractional_distillation_20_1
+
+		fractional_distillation_20_1 -> "Ammonia solution"
+		fractional_distillation_20_1 -> "Light oil" [label="first fraction"]
+		"Light oil" -> "Coal tar naphtha" [label="4/5"]
+		"Light oil" -> "Naphthalene" [label="1/5"]
+		"Light oil" -> "Phenol" [label="5-15%"]
+		"Coal tar naphtha" -> "Benzene" [label="100/156"]
+		"Coal tar naphtha" -> "Toluene" [label="30/156"]
+		"Coal tar naphtha" -> "Xylenes" [label="15/156"]
+		"Coal tar naphtha" -> "Mesitylene" [label="10/156"]
+		"Coal tar naphtha" -> "Durene" [label="1/156"]
+
+		// Pyridine exists, but we don't care about it
+
+		fractional_distillation_20_1 -> "Carbolic oil" [label="second fraction"]
+		"Carbolic oil" -> "Phenol"
+		"Carbolic oil" -> "Cresols"
+		"Carbolic oil" -> "Naphthalene" [label="40%"]
+
+		fractional_distillation_20_1 -> "Creosote oil" [label="third fraction"]
+		"Creosote oil" -> "Naphthalene"
+		"Creosote oil" -> "Heavy oils"
+
+		fractional_distillation_20_1 -> "Anthracene" [label="fourth fraction"]
+		
+		fractional_distillation_20_1 -> "Pitch"
+		coking_20_1 -> "Sulfur"
+		coking_20_1 -> "Crude coal gas"
+		"Crude coal gas" -> condenser_scrubber_20_1
+		condenser_scrubber_20_1 -> "Coal tar"
+		condenser_scrubber_20_1 -> "Coal gas"
+		// TODO: the bad outputs of the scrubber
+
+		"Coal gas" -> gas_separator_20_1
+		gas_separator_20_1 -> "Hydrogen" [label="50%"]
+		gas_separator_20_1 -> "Methane" [label="35%"]
+		gas_separator_20_1 -> "Carbon monoxide" [label="10%"]
+		gas_separator_20_1 -> "Ethylene" [label="5%"]
+
+		// 29.6 MJ/kg in coke
+		// 20 MJ/m³ in coal gas
+
+		// "The ordinary yield of tar in the manufacture of coal-gas
+		// is between 4 and 5% of the weight of the coal."
+
+		// "[coal tar's] heating-value is equal to the same weight of
+		// best coal, but it is very difficult to burn it completely
+		// without producing a great deal of evil-smelling smoke."
+
+		// Bituminous coal 24-35 MJ/kg
+		// Anthracite 26-33 MJ/kg
+		// Lignite 10-20 MJ/kg
+		
+	}
+	
+	subgraph {
+		// "10-12 MWh per ton of silicon"
+		// 3 carbon electrodes that are gradually consumed
+		distillation_5_1 [label="distillation", shape="rect"]
+		furnace_5_1      [label="electric arc furnace", shape="rect"]
+		heat_5_1         [label="chemical vapor deposition", shape="rect"]
+		mix_5_1          [label="fluidized bed reactor", shape="rect"]
+		mixture_5_1      [label="Mixture\nContains:\l  Trichlorosilane\l  Silicon tetrachloride\l  Hexachlorodisilane\l  Dichlorosilane\l"]
+		mixture_5_2      [label="Mixture\nContains:\l  Silicon tetrachloride\l  Hexachlorodisilane\l  Dichlorosilane\l"]
+		n_5_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_5_2 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_5_3 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_5_4 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_5_5 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_5_6 [label="...", shape="rect", fillcolor=blue, style=filled]
+		or_5_1 [label="OR", shape="diamond"]
+
+		"Quartz sand"  -> "Silicon dioxide"
+
+		"Graphite electrode" -> furnace_5_1
+		"Silicon dioxide" -> furnace_5_1
+		"Coke" -> furnace_5_1
+		furnace_5_1 -> "Metallurgical grade silicon"
+		furnace_5_1 -> "Carbon monoxide"
+		
+		"Metallurgical grade silicon" -> mix_5_1
+		"Hydrogen chloride (300 C)" -> mix_5_1
+		mix_5_1 -> "Hydrogen"
+		mix_5_1 -> mixture_5_1
+		mixture_5_1 -> distillation_5_1
+		distillation_5_1 -> "Trichlorosilane"
+		distillation_5_1 -> mixture_5_2
+		"Trichlorosilane" -> heat_5_1
+		"Hydrogen" -> heat_5_1
+		heat_5_1 -> "Semiconductor grade silicon"
+		heat_5_1 -> "Hydrochloric acid"
+		heat_5_1 -> "Silicon tetrachloride"
+
+		// Note that we only model one kind of doping, where the dopant is added during formation of the ingot/boule. We do not model diffusion. While these do create different kin
+		"Semiconductor grade silicon" -> n_5_1
+		"Semiconductor grade silicon" -> n_5_5
+		"Boron" -> or_5_1
+		"Phosphorus" -> or_5_1
+		or_5_1 -> n_5_1
+		or_5_1 -> n_5_5
+		n_5_1 -> "(Mono|Poly)crystalline (p-type|n-type)? silicon ingot"
+		n_5_5 -> "(Mono|Poly)crystalline (p-type|n-type)? silicon ingot"
+		
+		"Steel" -> n_5_3
+		"Diamond" -> n_5_3
+		n_5_3 -> "Steel wire with diamond splinters"
+		"Steel wire with diamond splinters" -> n_5_2
+		"Etchant" -> n_5_2
+		"(Mono|Poly)crystalline (p-type|n-type)? silicon wafer" -> n_5_4
+		"Polishing pad" -> n_5_4
+		"Slurry" -> n_5_4
+		n_5_4 -> "Polished (mono|poly)crystalline (p-type|n-type)? silicon wafer"
+
+		"(Mono|Poly)crystalline (p-type|n-type)? silicon ingot" -> n_5_2
+		n_5_2 -> "(Mono|Poly)crystalline (p-type|n-type)? silicon wafer"
+
+		"(Mono|Poly)crystalline (p-type|n-type)? silicon wafer" -> "(Mono|Poly)crystalline p-type silicon wafer"
+		"(Mono|Poly)crystalline p-type silicon wafer" -> n_5_6
+		"Silver" -> n_5_6
+		"Phosphorus" -> n_5_6
+		n_5_6 -> "Tier [12] Photovoltaic cell"
+	}
+
+	subgraph  {
+		color=grey
+		"Xanthate" [fontcolor=grey, color=grey]
+	}
+
+	subgraph {
+		cement_kiln_10_1    [label="cement kiln", shape="rect"]
+		grind_10_1          [label="cement mill", shape="rect"]
+		heat_10_1           [label="heat", shape="rect"]
+		lime_kiln_10_1      [label="lime kiln", shape="rect"]
+		mix_10_1            [label="mix", shape="rect"]
+		mix_10_2            [label="mix", shape="rect"]
+		
+		"Marble" -> "Limestone"
+		"Chalk" -> "Limestone"
+		"Limestone" -> "Calcium carbonate"
+		"Seashells" -> "Calcium carbonate"
+		"Calcium carbonate" -> lime_kiln_10_1
+		lime_kiln_10_1 -> "Calcium oxide"
+		lime_kiln_10_1 -> "Carbon dioxide"
+
+		"Water" -> mix_10_1
+		"Calcium oxide" -> mix_10_1
+		mix_10_1 -> "Calcium hydroxide"
+
+		// Some of the second raw materials used are: clay, shale, sand, iron ore, bauxite, fly ash and slag.
+		"Calcium carbonate" -> cement_kiln_10_1
+		"Clay" -> cement_kiln_10_1
+		cement_kiln_10_1 -> "Cement clinker"
+
+		"Gypsum" -> heat_10_1
+		heat_10_1 -> "Calcium sulfate"
+		"Anhydrite" ->"Calcium sulfate"
+
+		"Cement clinker" -> grind_10_1
+		"Calcium sulfate" -> grind_10_1
+		grind_10_1 -> "Cement powder"
+
+		"Calcium hydroxide" -> mix_10_2
+		"Carbon dioxide" -> mix_10_2
+		mix_10_2 -> "Calcium carbonate"
+	}
+
+	subgraph {
+		// TODO: wet sulfuric acid process
+		
+		combustion_14_1 [label="combustion", shape="rect"]
+		n_14_2 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_14_3 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_14_4 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_14_5 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_14_6 [label="...", shape="rect", fillcolor=blue, style=filled]
+		or_14_1 [label="OR", shape="diamond"];
+		make_14_1 [label="make", shape="rect"];
+
+		// TODO: exothermic process, heat can be recovered
+		"Sulfur" -> combustion_14_1
+		combustion_14_1 -> "Sulfur dioxide"
+		
+		// Contact process
+		{
+			// "Platinum was initially used as the catalyst for this
+			// reaction; however, as it is susceptible to reacting
+			// with arsenic impurities in the sulfur feedstock,
+			// vanadium(V) oxide (V₂O₅) is now preferred."
+			"Vanadium(V) oxide" -> or_14_1
+			"Platinum" -> or_14_1
+			or_14_1 -> make_14_1
+			make_14_1 -> "Module: Contact process catalyst"
+			
+			"Sulfur dioxide" -> n_14_2
+			"Sulfuric acid" -> n_14_2
+			"Ferric hydroxide" -> n_14_2
+			n_14_2 -> "Purified sulfur dioxide"
+
+			"Purified sulfur dioxide" -> n_14_3
+			"Module: Contact process catalyst" -> n_14_3
+			n_14_3 -> "Sulfur trioxide"
+
+			"Sulfur trioxide" -> n_14_4
+			"Sulfuric acid" -> n_14_4
+			n_14_4 -> "Oleum"
+
+			"Oleum" -> n_14_5
+			"Water" -> n_14_5
+			n_14_5 -> "Sulfuric acid"
+		}
+
+		// Lead chamber process
+		{
+			"Sulfur dioxide" -> n_14_6
+			"Steam" -> n_14_6
+			// TODO: "Nitrogen oxides are produced by decomposition of niter in the presence of sulfuric acid, or by hydrolysis of nitrosylsulfuric acid"
+			"Nitrogen dioxide" -> n_14_6
+			"Sulfuric acid" -> n_14_6
+			n_14_6 -> "Sulfuric acid"
+		}
+	}
+
+	subgraph {		
+		copper_15_1            [label="Copper"]
+		electrodeposition_15_1 [label="electrodeposition", shape="rect"]
+		or_15_1                [label="OR", shape="diamond"]
+		
+		copper_15_1 -> electrodeposition_15_1
+		electrodeposition_15_1 -> "Copper starter sheet"
+		"Copper starter sheet" -> or_15_1
+		"Stainless steel cathode" -> or_15_1
+	}
+
+	// Copper sulfide liberation
+	subgraph {
+		{
+			coarse_froth_flotation_0_1    [label="Coarse froth flotation", shape="rect"]
+			coarse_froth_flotation_0_2    [label="Coarse froth flotation", shape="rect"]
+			combine_0_1                   [label="combine", shape="rect"]
+			combine_0_2                   [label="combine", shape="rect"]
+			froth_flotation_0_1           [label="froth flotation", shape="rect"]
+			grinding_0_1                  [label="grinding", shape="rect"]
+			primary_crushing_0_1          [label="primary crushing", shape="rect"]
+			secondary_crushing_0_1        [label="secondary crushing", shape="rect"]
+			size_filtering_0_1            [label="particle classification", shape="rect"]
+			size_filtering_0_2            [label="particle classification", shape="rect"]
+			tank_leaching_0_1             [label="tank leaching", shape="rect"]
+			tank_leaching_0_2             [label="tank leaching", shape="rect"]
+			ultrafine_froth_flotation_0_1 [label="Ultrafine froth flotation", shape="rect"]
+			ultrafine_froth_flotation_0_2 [label="Ultrafine froth flotation", shape="rect"]
+			
+			Tailings_0_1  [label="Tailings\nParticle size: ultrafine, normal, coarse\lContains\l  ~50% of the copper sulfide,\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_2  [label="Tailings\nParticle size: ultrafine\lContains\l  ~25% of the copper sulfide,\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_7  [label="Tailings\nParticle size: normal\lContains\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_3  [label="Tailings\nParticle size: coarse\lContains\l  ~25% of the copper sulfide,\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_4  [label="Tailings\nParticle size: coarse\lContains\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_5  [label="Tailings\nParticle size: ultrafine\lContains\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_8  [label="Tailings\nParticle size: ultrafine, normal, coarse\lContains\l  ~50% of the copper sulfide,\l  galena,\l  sphalerite\l"]
+			Tailings_0_9  [label="Tailings\nParticle size: ultrafine\lContains\l  ~25% of the copper sulfide,\l  galena,\l  sphalerite\l"]
+			Tailings_0_10 [label="Tailings\nParticle size: coarse\lContains\l  ~25% of the copper sulfide,\l  galena,\l  sphalerite\l"]
+			Tailings_0_11 [label="Tailings\nParticle size: normal\lContains\l  galena,\l  sphalerite\l"]
+			Tailings_0_12 [label="Tailings\nParticle size: ultrafine\lContains\l  galena,\l  sphalerite\l"]
+			Tailings_0_13 [label="Tailings\nParticle size: coarse\lContains\l  galena,\l  sphalerite\l"]
+			Tailings_0_14 [label="Tailings\nParticle size: ultrafine, normal, coarse\lContains:\l  copper oxides,\l  galena,\l  sphalerite\l"]
+			Tailings_0_15 [label="Tailings\nParticle size: ultrafine, normal, coarse\lContains:\l  galena,\l  sphalerite\l"]
+
+			copper_sulfide_concentrate_0_1 [label="Copper sulfide concentrate\nImpurities:\l  Other sulfides\l", color=green]
+
+			
+			"Copper sulfide ore" -> primary_crushing_0_1
+			primary_crushing_0_1 -> "Crushed copper sulfide ore"
+			"Crushed copper sulfide ore" -> secondary_crushing_0_1
+			secondary_crushing_0_1 -> "Finely crushed copper sulfide ore"
+			"Finely crushed copper sulfide ore" -> grinding_0_1
+			grinding_0_1 -> "Powdered copper sulfide ore"
+			"Powdered copper sulfide ore" -> froth_flotation_0_1
+			froth_flotation_0_1 -> copper_sulfide_concentrate_0_1
+			"Calcium hydroxide" -> froth_flotation_0_1 [label="optional, improves efficiency"]
+			// TODO: we'll probably remove the need of Xanthate. There
+			// are a dozen different xanthates, none of which are fun
+			// to make, and different ores need different xanthates.
+			"Xanthate" -> froth_flotation_0_1 [color=grey]
+			froth_flotation_0_1 -> Tailings_0_1 [label="50% of copper sulfide is lost to tailings"]
+		}
+
+		{
+			edge [color=blue]
+			
+			Tailings_0_1 -> size_filtering_0_1
+			size_filtering_0_1 -> Tailings_0_2
+			size_filtering_0_1 -> Tailings_0_3
+			size_filtering_0_1 -> Tailings_0_7
+			Tailings_0_2 -> ultrafine_froth_flotation_0_1
+			ultrafine_froth_flotation_0_1 -> copper_sulfide_concentrate_0_1
+			ultrafine_froth_flotation_0_1 -> Tailings_0_5
+			
+			Tailings_0_3 -> coarse_froth_flotation_0_1
+			coarse_froth_flotation_0_1 -> copper_sulfide_concentrate_0_1
+			coarse_froth_flotation_0_1 -> Tailings_0_4
+
+			{
+				Tailings_0_5 -> combine_0_1
+				Tailings_0_4 -> combine_0_1
+				Tailings_0_7 -> combine_0_1
+				combine_0_1 -> Tailings_0_14
+			}
+
+			
+			{
+				edge [color=red]
+				
+				Tailings_0_14 -> tank_leaching_0_2
+				tank_leaching_0_2 -> Tailings_0_15
+			}
+		}
+
+		{
+			edge [color=red]
+			
+			Tailings_0_1 -> tank_leaching_0_1
+			tank_leaching_0_1 -> Tailings_0_8
+
+			{
+				edge [color=blue]
+				
+				Tailings_0_8 -> size_filtering_0_2
+				size_filtering_0_2 -> Tailings_0_9
+				size_filtering_0_2 -> Tailings_0_10
+				size_filtering_0_2 -> Tailings_0_11
+				Tailings_0_9 -> ultrafine_froth_flotation_0_2
+				ultrafine_froth_flotation_0_2 -> copper_sulfide_concentrate_0_1
+				ultrafine_froth_flotation_0_2 -> Tailings_0_12
+				
+				Tailings_0_10 -> coarse_froth_flotation_0_2
+				coarse_froth_flotation_0_2 -> copper_sulfide_concentrate_0_1
+				coarse_froth_flotation_0_2 -> Tailings_0_13
+				
+				{
+					Tailings_0_11 -> combine_0_2
+					Tailings_0_12 -> combine_0_2
+					Tailings_0_13 -> combine_0_2
+					combine_0_2 -> Tailings_0_15
+				}
+			}
+		}
+	}
+
+	// Copper sulfide converting
+	subgraph {
+		anode_casting_11_1      [label="anode casting", shape="rect"]
+		converting_furnace_11_1 [label="converting furnace", shape="rect"]
+		copper_11_2             [label="Pure copper"]
+		electrolysis_11_1       [label="electrolysis", shape="rect"]
+		feed_back_11_1          [label="Feed back into reverberatory furnace", shape="rect"]
+		n_11_2                  [label="...", shape="rect", fillcolor=blue, style=filled]
+		slag_11_1               [label="Slag"]
+		sludge_11_1             [label="Sludge\nContains traces of\l  Gold\l  Silver\l  Platinum\l  Tin\l"]
+
+		"Matte (Cu-Fe-S)" -> converting_furnace_11_1
+		converting_furnace_11_1 -> "Copper blister"
+		"Calcium carbonate" -> converting_furnace_11_1
+		converting_furnace_11_1 -> slag_11_1
+		slag_11_1 -> n_11_2
+		slag_11_1 -> feed_back_11_1 [label="optional"]
+		converting_furnace_11_1 -> "Sulfur dioxide"
+		"Copper blister" -> anode_casting_11_1
+		anode_casting_11_1 -> "Copper blister anode"
+		or_15_1 -> electrolysis_11_1
+		"Electrolyte" -> electrolysis_11_1
+		"Copper blister anode" -> electrolysis_11_1
+		electrolysis_11_1 -> copper_11_2
+		electrolysis_11_1 -> sludge_11_1
+	}
+
+	// Copper sulfide reverberatory furnace
+	subgraph {
+		or_1_1                    [label="OR", shape="diamond"]
+		partial_roasting_1_1      [label="partial roasting", shape="rect"]
+		reverberatory_furnace_1_1 [label="reverberatory furnace", shape="rect"]
+		slag_1_1                  [label="Slag\nContains:\l  FeO.SiO₂\l  Copper oxide\l  Copper sulfide\l  Droplets of matte\l"]
+		
+		copper_sulfide_concentrate_0_1 -> partial_roasting_1_1
+		partial_roasting_1_1 -> "Copper calcine"
+		partial_roasting_1_1 -> "Sulfur dioxide"
+		"Copper calcine" -> reverberatory_furnace_1_1
+		reverberatory_furnace_1_1 -> slag_1_1
+		reverberatory_furnace_1_1 -> "Sulfur dioxide"
+		"Silicon dioxide" -> reverberatory_furnace_1_1
+		"Pulverized coal" -> or_1_1
+		"Fuel oil" -> or_1_1
+		"Natural gas" -> or_1_1
+		or_1_1 -> reverberatory_furnace_1_1
+		reverberatory_furnace_1_1 -> "Matte (Cu-Fe-S)"
+	}
+
+	subgraph {
+		tank_leaching_12_1 [label="tank leaching", shape="rect"]
+	}
+
+	// Copper sulfide ISASMELT
+	subgraph {
+		isasmelt_3_1 [label="ISASMELT", shape="rect"]
+		n_3_1        [label="...", shape="rect", fillcolor=blue, style=filled]
+		slag_3_1     [label="Slag"]
+
+		copper_sulfide_concentrate_0_1 -> isasmelt_3_1
+		"Silicon dioxide" -> isasmelt_3_1
+		"Enriched oxygen" -> isasmelt_3_1
+		"Fuel" -> isasmelt_3_1
+		isasmelt_3_1 -> slag_3_1
+		slag_3_1 -> n_3_1
+		isasmelt_3_1 -> "Matte (Cu-Fe-S)"
+		isasmelt_3_1 -> "Sulfur dioxide"
+	}
+
+	// Copper oxide
+	subgraph {
+		agglomeration_12_1      [label="agglomeration", shape="rect"]
+		agglomeration_12_2      [label="agglomeration", shape="rect"]
+		cementation_12_1        [label="cementation", shape="rect"]
+		electrowinning_12_1     [label="electrowinning", shape="rect"]
+		grinding_12_1           [label="grinding", shape="rect"]
+		heap_leaching_12_1      [label="heap leaching", shape="rect"]
+		primary_crushing_12_1   [label="primary crushing", shape="rect"]
+		secondary_crushing_12_1 [label="secondary crushing", shape="rect"]
+		solvent_extraction_12_1 [label="solvent extraction", shape="rect"]
+		or_12_1 [label="OR", shape="diamond"]
+
+		
+		"Copper oxide ore" -> primary_crushing_12_1
+		primary_crushing_12_1 -> "Crushed copper oxide ore"
+		"Crushed copper oxide ore" -> agglomeration_12_1
+		agglomeration_12_1 -> heap_leaching_12_1
+		"Crushed copper oxide ore" -> heap_leaching_12_1
+		"Crushed copper oxide ore" -> secondary_crushing_12_1
+		secondary_crushing_12_1 -> "Finely crushed copper oxide ore"
+		"Finely crushed copper oxide ore" -> agglomeration_12_2
+		agglomeration_12_2 -> heap_leaching_12_1
+		"Finely crushed copper oxide ore" -> heap_leaching_12_1
+		"Finely crushed copper oxide ore" -> grinding_12_1
+		grinding_12_1 -> "Powdered copper oxide ore"
+		"Powdered copper oxide ore" -> or_12_1
+
+		copper_sulfide_concentrate_0_1 -> "3x roasting"
+		"3x roasting" -> "Copper oxide concentrate"
+		"Copper oxide concentrate" -> or_12_1
+
+		// TODO: why does tank leaching need water? and no sulfuric acid? while making copper sulfate?
+		or_12_1 -> tank_leaching_12_1
+
+
+		"Water" -> heap_leaching_12_1
+		"Sulfuric acid" -> heap_leaching_12_1
+		"Water" -> tank_leaching_12_1
+		"Sulfuric acid" -> tank_leaching_12_1
+
+		heap_leaching_12_1 -> Tailings_1
+		tank_leaching_12_1 -> Tailings_3
+
+		heap_leaching_12_1 -> "Copper sulfate in sulfuric acid"
+		tank_leaching_12_1 -> "Copper sulfate in sulfuric acid"
+
+		"Copper sulfate in sulfuric acid" -> solvent_extraction_12_1
+
+		{
+			n_12_1 [label="...", fillcolor=blue, style=filled]
+			n_12_2 [label="...", fillcolor=blue, style=filled]
+
+			"TBD" -> solvent_extraction_12_1
+			solvent_extraction_12_1 -> "Copper sulfate in solution"
+			solvent_extraction_12_1 -> "Waste sulfuric acid"
+			"Waste sulfuric acid" -> n_12_1
+			"Copper sulfate in solution" -> electrowinning_12_1
+			electrowinning_12_1 -> "Pure copper"
+			electrowinning_12_1 -> n_12_2
+
+			or_15_1 -> electrowinning_12_1
+		}
+
+		"Copper sulfate in sulfuric acid" -> cementation_12_1
+		{
+			"Iron scraps" -> cementation_12_1
+			cementation_12_1 -> "Cement copper"
+			cementation_12_1 -> "Iron sulfate in sulfuric acid"
+		}
+	}
+
+	subgraph {
+		// TODO: "https://en.wikipedia.org/wiki/Resistor#Fixed_resistor"
+		// TODO: "https://en.wikipedia.org/wiki/Capacitor_types"
+		// TODO: "https://en.wikipedia.org/wiki/Inductor#Types"
+
+		// https://link.springer.com/chapter/10.1007/978-3-319-48933-9_29
+		
+		n_13_1 [label="...", fillcolor=blue, style=filled]
+		n_13_2 [label="...", fillcolor=blue, style=filled]
+		n_13_3 [label="...", fillcolor=blue, style=filled]
+		n_13_4 [label="...", fillcolor=blue, style=filled]
+		n_13_5 [label="...", fillcolor=blue, style=filled]
+		n_13_6 [label="...", fillcolor=blue, style=filled]
+		n_13_7 [label="...", fillcolor=blue, style=filled]
+		n_13_8 [label="...", fillcolor=blue, style=filled]
+		or_13_1 [label="OR", shape="diamond"]
+		or_13_2 [label="OR", shape="diamond"]
+		or_13_3 [label="OR", shape="diamond"]
+		solvent_13_1 [label="Solvent"]
+		binder_13_1 [label="Binder"]
+		
+		"Copper" -> n_13_1
+		n_13_1 -> "Leads"
+
+		// TODO: "Alumina substrates are manufactured by blending
+		// alumina powder, with an average particle size of around
+		// 1 μm, together with small amounts of silica, magnesia and
+		// calcia. These are either ball- or roll-milled for about
+		// 10 h with lubricants, binders and solvents that ensure
+		// thorough mixing. Most thick film substrates are less than
+		// one millimeter thick, and the preferred method of
+		// fabrication is sheet casting. A slurry is allowed to flow
+		// out onto a smooth belt, and it passes under a metal doctor
+		// blade which controls the resultant thickness. The material
+		// is then dried in air to remove the solvent and, at this
+		// stage, it is sometimes referred to as the green state
+		// because of its color. The substrates are then fired in a
+		// kiln for at least 12 h. A peak temperature of around 1500∘C
+		// ensures that the materials are properly sintered. During
+		// firing, the substrates can shrink by up to 20%, and this
+		// needs to be taken into consideration for the formation of
+		// the final substrate. The surface finish can be improved by
+		// coating the surface with a thin, glassy layer (glazing),
+		// which is done as an additional step at a lower temperature.
+		
+		// Resistors
+		{
+			// https://www.youtube.com/watch?v=wshRwO0MCSU - YAGEO Chip Resistors manufacturing process
+			// https://threerollmill.com/documents/thick_film_paste.pdf
+			
+			"Leads" -> n_13_2
+			"Carbon" -> n_13_2
+			"Alumina ceramic" -> n_13_2
+			n_13_2 -> "Carbon composition resistor"
+
+			"Leads" -> n_13_3
+			"Carbon" -> n_13_3
+			"Alumina ceramic" -> n_13_3
+			n_13_3 -> "Carbon film resistor"
+
+			// TODO: pretty sure this isn't complete
+			"Nichrome" -> n_13_4
+			"Alumina ceramic" -> n_13_4
+			n_13_4 -> "Thin film resistor"
+
+			
+			// Substrate
+			"Alumina ceramic" -> n_13_5
+			n_13_5 -> "Substrate"
+			
+			"Kerosene" -> or_13_2
+			"Mineral spirits" -> or_13_2
+			"Dibutyl phthalate" -> or_13_2
+			"Butyl carbitol" -> or_13_2
+			"Butyl carbitol acetate" -> or_13_2
+			"Hexylene glycol" -> or_13_2
+			or_13_2 -> solvent_13_1
+
+			"Ethyl cellulose" -> or_13_3
+			"Ethyl hydroxyethyl cellulose" -> or_13_3
+			"Wood rosin" -> or_13_3
+			or_13_3 -> binder_13_1
+
+			// Also common nowadays are alloys of silver and palladium
+			// or platinum, likely because they're cheaper than gold
+			// while having most of the same properties.
+			"Silver" -> or_13_1
+			"Gold" -> or_13_1
+			or_13_1 -> n_13_6
+			"Glass frit" -> n_13_6
+			solvent_13_1 -> n_13_6
+			binder_13_1 -> n_13_6
+			n_13_6 -> "Conductive paste"
+
+			// Resistor paste
+			"Ruthenium(IV) oxide" -> n_13_7
+			"Glass frit" -> n_13_7
+			solvent_13_1 -> n_13_7
+			binder_13_1 -> n_13_7
+			n_13_7 -> "Resistive paste"
+
+			"Conductive paste" -> n_13_8
+			"Resistive paste" -> n_13_8
+			"Substrate" -> n_13_8
+			n_13_8 -> "Thick film resistor"
+			
+
+			// "The most widely used thin-film cermet resistors are
+			// compositions of silicon monoxide and chromium (SiO-Cr)
+			// and are used primarily because of their high
+			// sheet-resistances and their ability to form high-valued
+			// resistors in a minimum of substrate area."
+		}
+
+		// https://www.youtube.com/watch?v=gFEYuaY35Vo - KEMET Ceramic Capacitor Manufacturing
+		
+
+		// There are many substrates for PCBs, but most of them are
+		// not sufficiently different. We can focus on FR-2, FR-3 and
+		// FR-4 to model technological progression.
+		//
+		// Additionally, aluminium-core PCBs are used for high-power applications
+
+		"Phenol" -> pcb1
+		"Formaldehyde" -> pcb1
+		"Paper" -> pcb1
+		pcb1 -> FR2
+
+		"Paper" -> pcb2
+		"Epoxy resin" -> pcb2
+		pcb2 -> FR3
+
+		"Fiberglass" -> pcb3
+		// "brominated epoxy"
+		"Epoxy resin" -> pcb3
+		pcb3 -> FR4
+
+		"Aluminium" -> pcb4
+		"Epoxy resin" -> pcb4
+		pcb4 -> "Insulated metal substrate"
+	}
+
+	// TNT
+	subgraph {
+		mix_18_6 [label="mix", shape="rect"]
+		mix_18_7 [label="mix", shape="rect"]
+		mix_18_8 [label="mix", shape="rect"]
+		mix_18_9 [label="mix", shape="rect"]
+
+		"Toluene" -> mix_18_6
+		"Sulfuric acid" -> mix_18_6
+		"Nitric acid" -> mix_18_6
+		mix_18_6 -> "Mononitrotoluene"
+		"Mononitrotoluene" -> mix_18_7
+		"Sulfuric acid" -> mix_18_7
+		"Nitric acid" -> mix_18_7
+		mix_18_7 -> "Dinitrotoluene"
+		"Dinitrotoluene" -> mix_18_8
+		"Nitric acid" -> mix_18_8
+		"Oleum" -> mix_18_8
+		mix_18_8 -> "Crude trinitrotoluene"
+		"Crude trinitrotoluene" -> mix_18_9
+		"Sodium sulfite" -> mix_18_9
+		mix_18_9 -> "Trinitrotoluene"
+		mix_18_9 -> "Red water"
+
+		// TODO: more detailed process
+	}
+
+	// Ammunition
+	subgraph {
+		furnace_17_1 [label="destructive distillation", shape="rect"]
+		liebig_17_1  [label="liebig process", shape="rect"]
+		machine_17_1 [label="make", shape="rect"]
+		machine_17_2 [label="make", shape="rect"]
+		machine_17_4 [label="make", shape="rect"]
+		machine_17_5 [label="make", shape="rect"]
+		machine_17_6 [label="make", shape="rect"]
+		machine_17_7 [label="make", shape="rect"]
+		machine_17_8 [label="make", shape="rect"]
+		mix_17_1     [label="mix", shape="rect"]
+		mix_17_2     [label="mix", shape="rect"]
+		mix_17_3     [label="mix", shape="rect"]
+		mix_17_4     [label="mix", shape="rect"]
+		mix_17_5     [label="mix", shape="rect"]
+		or_17_1      [label="OR", shape="diamond"]
+		or_17_2      [label="OR", shape="diamond"]
+		or_17_3      [label="OR", shape="diamond"]
+
+		{rank=same; "T1 Primer"; "T2 Primer"; "FA-70 primer"; "PA-101 primer";}
+		{rank=same; "T1 Cartridge"; "T2 Cartridge"; "T3 Cartridge";}
+		{rank=same; "Black powder"; "Smokeless powder"; "Cordite MD";}
+		{rank=same; "Bullet"; "Cartridge case"; or_17_1; or_17_3}
+		{rank=same; machine_17_5; machine_17_6; machine_17_7; machine_17_8;}
+
+		// TODO: do we need to use charcoal, or can we use normal coal
+		// or coke? Also, if we use coal, do we still need sulfur?
+		"Niter" -> "Potassium nitrate"
+		"Potassium nitrate" -> mix_17_1
+		"Charcoal" -> mix_17_1
+		"Sulfur" -> mix_17_1
+		mix_17_1 -> "Black powder"
+
+		
+		"Wood" -> furnace_17_1
+		fuel_17_1 -> furnace_17_1
+		furnace_17_1 -> "Pyroligneous acid"
+		furnace_17_1 -> "Wood tar"
+		furnace_17_1 -> "Charcoal"
+
+		"Cellulose" -> mix_17_2
+		"Nitric acid" -> mix_17_2
+		mix_17_2 -> "Nitrocellulose"
+
+		"Nitrocellulose" -> mix_17_4
+		"Ether" -> mix_17_4
+		"Ethanol" -> mix_17_4
+		mix_17_4 -> "Smokeless powder"
+
+		"Nitrocellulose" -> mix_17_3
+		"Nitroglycerin" -> mix_17_3
+		"Petroleum jelly" -> mix_17_3
+		mix_17_3 -> "Cordite MD"
+
+		// Bullet cases can also be made of aluminium or soft steel,
+		// but in terms of Factorio progression, making either of
+		// those is probably not easier than making brass, and there's
+		// no real-world advantage to using them, other than weight.
+		"Brass" -> machine_17_1
+		machine_17_1 -> "Cartridge case"
+
+		"Lead" -> machine_17_2
+		machine_17_2 -> "Bullet"
+
+		// TODO: https://www.petersoncartridge.com/technical-information/drawing-brass/
+		"Bullet" -> machine_17_4
+		"Cartridge case" -> machine_17_4
+		"Black powder" -> or_17_1 [label="T1"]
+		"Smokeless powder" -> or_17_1 [label="T2"]
+		"Cordite MD" -> or_17_1 [label="T3"]
+		or_17_1 -> machine_17_4
+		"T1 Primer" -> or_17_3 [label="T1"]
+		"T2 Primer" -> or_17_3 [label="T2"]
+		"FA-70 primer" -> or_17_3 [label="T3"]
+		"PA-101 primer" -> or_17_3 [label="T4"]
+		or_17_3 -> machine_17_4
+		machine_17_4 -> or_17_2
+		or_17_2 -> "T1 Cartridge"
+		or_17_2 -> "T2 Cartridge"
+		or_17_2 -> "T3 Cartridge"
+		
+		"Mercury" -> mix_17_5
+		"Nitric acid" -> mix_17_5
+		"Ethanol" -> mix_17_5
+		mix_17_5 -> "Mercury fulminate"
+		"Mercury fulminate" -> machine_17_5
+		machine_17_5 -> "T1 Primer"
+		
+		"Sylvite" -> "Potassium chloride"
+		"Carnallite" -> "Potassium chloride"
+		"Potash" -> "Potassium chloride"
+		
+		"Chlorine" -> liebig_17_1
+		"Calcium hydroxide" -> liebig_17_1
+		"Potassium chloride" -> liebig_17_1
+		liebig_17_1 -> "Potassium chlorate"
+		
+		"Mercury fulminate" -> machine_17_6
+		"Potassium chlorate" -> machine_17_6
+		machine_17_6 -> "T2 Primer"
+		
+		"Potassium chlorate" -> machine_17_7
+		"Lead(II) thiocyanate" -> machine_17_7
+		"Antimony trisulfide" -> machine_17_7
+		"Trinitrotoluene" -> machine_17_7
+		machine_17_7 -> "FA-70 primer"
+
+		"Lead styphnate" -> machine_17_8
+		"Barium nitrate" -> machine_17_8
+		"Antimony trisulfide" -> machine_17_8
+		"Powdered aluminium" -> machine_17_8
+		"Tetrazine" -> machine_17_8
+		machine_17_8 -> "PA-101 primer"
+	}
+
+	// Cellulose
+	subgraph {
+		grind_19_1        [label="grind", shape="rect"]
+		grind_19_2        [label="grind", shape="rect"]
+		grind_19_3        [label="grind", shape="rect"]
+		make_19_1         [label="make", shape="rect"]
+		mix_19_1          [label="mix", shape="rect"]
+		woodchipping_19_1 [label="woodchipping", shape="rect"]
+
+		"Wood" -> woodchipping_19_1
+		woodchipping_19_1 -> "Wood chips"
+		woodchipping_19_1 -> "Bark"
+		woodchipping_19_1 -> "Sawdust"
+
+
+		// Steam treatment significantly reduces the total energy
+		// needed to make the pulp and decreases the damage (cutting)
+		// to fibres
+		"Wood chips" -> grind_19_1
+		grind_19_1 -> "Refiner mechanical pulp"
+		"Refiner mechanical pulp" -> "Cellulose"
+
+		"Wood chips" -> grind_19_2
+		"Steam" -> grind_19_2
+		grind_19_2 -> "Thermomechanical pulp"
+		"Thermomechanical pulp" -> "Cellulose"
+
+		"Sodium carbonate" -> mix_19_1
+		"Sodium hydroxide" -> mix_19_1
+		"Sodium sulfate" -> mix_19_1
+		"Wood chips" -> mix_19_1
+		mix_19_1 -> "Pre-treated wood chips"
+		"Pre-treated wood chips" -> grind_19_3
+		"Steam" -> grind_19_3
+		grind_19_3 -> "Chemi-thermomechanical pulp"
+		"Chemi-thermomechanical pulp" -> "Cellulose"
+
+		// Mechanical pulp mills use large amounts of energy, mostly
+		// electricity to power motors which turn the grinders. A
+		// rough estimate of the electrical energy needed is 10,000
+		// megajoules (MJ) per tonne of pulp (2,750 kWh per tonne)
+
+		// TODO: other sources of fiber, such as bamboo, straw, …
+
+		// Stainless steels is used extensively in the pulp and paper
+		// industry[11] for two primary reasons, to avoid iron
+		// contamination of the product and their corrosion resistance
+		// to the various chemicals used in the papermaking
+		// process.
+
+		// It enabled the recovery and reuse of the inorganic pulping
+		// chemicals such that a kraft mill is a nearly closed-cycle
+		// process with respect to inorganic chemicals
+
+		// Wetting needs normal steam. Burning black liquor produces
+		// high pressure steam, which can be used to generate power,
+		// yielding normal steam to be used for wetting.
+
+		// Kraft process
+		subgraph {
+			cook_19_1_1                       [label="cook", shape="rect"]
+			furnace_19_1_1                    [label="furnace", shape="rect"]
+			impregnate_19_1_1                 [label="impregnate", shape="rect"]
+			mix_19_1_1                        [label="mix", shape="rect"]
+			multiple_effect_evaporator_19_1_1 [label="multiple effect evaporator", shape="rect"]
+			preheat_19_1_1                    [label="preheat", shape="rect"]
+			recovery_boiler_19_1_1            [label="recovery boiler", shape="rect"]
+			slaker_19_1_1                     [label="slaker", shape="rect"]
+
+			
+			"Wood chips" -> preheat_19_1_1
+			"Steam" -> preheat_19_1_1
+			preheat_19_1_1 -> "Preheated wood chips"
+
+			"Preheated wood chips" -> impregnate_19_1_1
+			"White liquor" -> impregnate_19_1_1
+			impregnate_19_1_1 -> "Impregnated wood chips"
+
+			"Impregnated wood chips" -> cook_19_1_1
+			cook_19_1_1 -> "Black liquor"
+			cook_19_1_1 -> "Cellulose"
+
+			"Black liquor" -> multiple_effect_evaporator_19_1_1
+			multiple_effect_evaporator_19_1_1 -> "Heavy black liquor"
+			multiple_effect_evaporator_19_1_1 -> "Rosin soap"
+
+			"Heavy black liquor" -> recovery_boiler_19_1_1
+			recovery_boiler_19_1_1 -> "High pressure steam"
+			recovery_boiler_19_1_1 -> "Green liquor"
+			"Green liquor" -> slaker_19_1_1
+			"Calcium oxide" -> slaker_19_1_1
+			slaker_19_1_1 -> "White liquor"
+			slaker_19_1_1 -> "Calcium carbonate"
+
+			// There is also thenardite, which turns into mirabilite,
+			// and glauberite. Both are less common than mirabilite.
+			"Mirabilite" -> "Sodium sulfate"
+			"Sodium sulfate" -> furnace_19_1_1
+			"Carbon" -> furnace_19_1_1
+			furnace_19_1_1 -> "Sodium sulfide"
+			"Sodium hydroxide" -> mix_19_1_1
+			"Sodium sulfide" -> mix_19_1_1
+			mix_19_1_1 -> "White liquor"
+
+			// Sodium sulfate is also a by-product of other chemical
+			// processes, such as the production of hydrochloric acid.
+		}
+
+		// TODO: technically there's bleached and unbleached cellulose and thus paper
+		"Cellulose" -> make_19_1
+		make_19_1 -> "Paper"
+
+		// TODO: there are also the Sulfite process and Soda pulping.
+	}
+
+
+	// Iron
+	subgraph {
+		// TODO: add slag and flue gases
+		
+		// Direct reduced iron processes for steelmaking exist, but
+		// might not fit into our mod.
+
+		/*
+		Our iron/steel progression looks like this:
+		0. Making pig iron using
+		a. Blast furnace
+		b. Blast furnace with oxygen injection
+		c. HIsarna process
+		1. Making wrought iron using
+		a. Bloomery
+		b. Finery
+		(Potting and stamping, which we are skipping)
+		c. Puddling
+		2. Making steel using
+		a. cementation
+		b. Bessemer process
+		(We're skipping the open hearth furnace; IRL it was easier than the
+		Bessemer process because it was slower, which we don't care about.)
+		c. basic oxygen steelmaking
+		(We're skipping the electric arc furnace, because we don't have scrap steel)
+
+		1 and 2 occur somewhat in parallel, with most gating happening
+		due to the use of coke.
+
+		In the real world, there were different qualities of steel.
+		Cementation produced blister steel, which had to be refined
+		into shear steel, later crucible steel. And steel produced by
+		the bessemer process, while being much cheaper, also was
+		inferior to crucible steel. In Factorio, we can't easily model
+		different qualities of steel, so we'll have to tweak
+		quantities of steel produced instead. One implication is that
+		the Bessemer process will deprecate the cementation process,
+		while IRL the two existed side by side.
+		*/
+
+		crushing_21_1 [label="crushing", shape="rect"]
+		crushing_21_2 [label="fine crushing", shape="rect"]
+		crushing_21_3 [label="fine crushing", shape="rect"]
+		crushing_21_4 [label="fine crushing", shape="rect"]
+		crushing_21_5 [label="fine crushing", shape="rect"]
+		roasting_21_1 [label="roasting", shape="rect"]
+		sintering_21_1 [label="sintering", shape="rect"]
+		bloomery_21_1 [label="bloomery", shape="rect"]
+		finery_21_1 [label="finery", shape="rect"]
+		cementation_21_1 [label="cementation", shape="rect"]
+		bessemer_21_1 [label="bessemer process", shape="rect"]
+		blast_furnace_21_1 [label="blast furnace", shape="rect"]
+		blast_furnace_21_2 [label="blast furnace", shape="rect"]
+		blast_furnace_21_3 [label="blast furnace", shape="rect"]
+		hisarna_21_1 [label="hisarna", shape="rect"]
+		crucible_furnace_21_1 [label="crucible furnace", shape="rect"]
+		puddling_21_1 [label="puddling", shape="rect"]
+		gravity_21_1 [label="gravity separation", shape="rect"]
+		magnetic_separation_21_1 [label="magnetic separation", shape="rect"]
+		bos_21_1 [label="basic oxygen steelmaking", shape="rect"]
+		n_21_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_21_2 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_21_3 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_21_4 [label="...", shape="rect", fillcolor=blue, style=filled]
+		or_21_1 [label="OR", shape="diamond"]
+
+		{rank=same; "Direct shipping iron ore"; "Hematite ore"; "Magnetite ore";}
+		{rank=same; crushing_21_1; crushing_21_2; crushing_21_3; crushing_21_4; crushing_21_5;}
+		{rank=same; "Low grade iron ore fines"; "Magnetite ore fines";}
+		{rank=same; "Iron ore fines"; "Iron ore lumps"; "Crushed iron ore";}
+		{rank=same; blast_furnace_21_1; blast_furnace_21_2; blast_furnace_21_3; hisarna_21_1;}
+		{rank=same; n_21_1; n_21_2; n_21_3;}
+		
+		"Direct shipping iron ore" -> crushing_21_2
+		crushing_21_2 -> "Iron ore fines"
+		crushing_21_2 -> "Iron ore lumps"
+
+		"Direct shipping iron ore" -> crushing_21_3
+		crushing_21_3 -> "Iron ore fines"
+
+		// European average bloom sizes quickly rose to 300 kg, where
+		// they levelled off until the demise of the bloomery.
+
+		// TODO: this recipe makes it impossible to turn crushed ore
+		// into fines, because we throw all qualities into the same
+		// bucket.
+		"Direct shipping iron ore" -> or_21_1
+		"Hematite ore" -> or_21_1
+		"Magnetite ore" -> or_21_1
+		or_21_1 -> crushing_21_1
+		crushing_21_1 -> "Crushed iron ore"
+		"Crushed iron ore" -> roasting_21_1
+		roasting_21_1 -> "Roasted, crushed iron ore"
+
+		// Bloomeries, making wrought iron
+		"Roasted, crushed iron ore" -> bloomery_21_1
+		// TODO: could we also use coal/coke?
+		"Charcoal" -> bloomery_21_1
+		bloomery_21_1 -> bloom_21_1
+		bloom_21_1 -> n_21_1
+		n_21_1 -> "Wrought iron"
+		// In the real world, the slag may contain enough iron to be
+		// worth feeding back into the bloomery. We choose to avoid
+		// that complexity.
+
+		
+		"Iron ore fines" -> sintering_21_1
+		"Calcium carbonate" -> sintering_21_1
+		"Coke breeze" -> sintering_21_1
+		"Clay" -> sintering_21_1
+		sintering_21_1 -> "Iron sinter"
+		
+		// Blast furnaces, making pig iron
+		// 
+		// Note that the blast furnace and finery must use charcoal
+		// (or some other clean source of energy we won't have yet),
+		// and cannot use coal or coke. Coal contains too much sulfur,
+		// which we can't all remove. If we have a blast furnace with
+		// mechanized air blowing, then we can increase the amount of
+		// calcium carbonate to remove all of the sulfur.
+		//
+		// The reliance on charcoal also puts a limit to how big we
+		// can make the blast furnace, as charcoal can't carry as much
+		// weight as coke.
+		"Roasted, crushed iron ore" -> blast_furnace_21_1
+		"Charcoal" -> blast_furnace_21_1
+		"Calcium carbonate" -> blast_furnace_21_1
+		blast_furnace_21_1 -> "Pig iron"
+
+		"Iron sinter" -> blast_furnace_21_2
+		"Oxygen" -> blast_furnace_21_2
+		blast_furnace_21_2 -> "Pig iron"
+
+		"Iron ore lumps" -> blast_furnace_21_3
+		"Calcium carbonate" -> blast_furnace_21_3
+		"Coke" -> blast_furnace_21_3
+		"Oxygen" -> blast_furnace_21_3
+		blast_furnace_21_3 -> "Pig iron"
+
+		"Hematite ore" -> crushing_21_4
+		crushing_21_4 -> "Low grade iron ore fines"
+		"Low grade iron ore fines" -> gravity_21_1
+		gravity_21_1 -> "Iron ore fines"
+
+		"Magnetite ore" -> crushing_21_5
+		crushing_21_5 -> "Magnetite ore fines"
+		"Magnetite ore fines" -> magnetic_separation_21_1
+		magnetic_separation_21_1 -> "Magnetite concentrate"
+		"Magnetite concentrate" -> "Iron ore fines"
+		
+		// Fineries, turning pig iron into wrought iron
+		"Pig iron" -> finery_21_1
+		"Charcoal" -> finery_21_1
+		finery_21_1 -> bloom_21_2
+		bloom_21_2 -> n_21_2
+		n_21_2 -> "Wrought iron"
+
+		// Puddling, turning pig iron into wrought iron
+		//
+		// Technically, dry puddling can only use white cast iron. We
+		// could add a step for refining grey cast iron to white cast
+		// iron, but let's just pretend that happens internally.
+		//
+		// There's also wet puddling, where rusted iron is added to
+		// the mix, but we don't have rust… And at this point, we also
+		// don't have a way of pumping pure oxygen in there.
+		"Pig iron" -> puddling_21_1
+		"Coke" -> puddling_21_1
+		puddling_21_1 -> "Puddled ball"
+		"Puddled ball" -> n_21_3
+		n_21_3 -> "Wrought iron"
+
+		// Cementation, turning wrought iron into steel
+		//
+		// In real history, the cementation process used specific
+		// wrought iron from Sweden because it was so exceptionally
+		// pure. We'll pretend that all wrought iron is great.
+		"Wrought iron" -> cementation_21_1
+		"Charcoal" -> cementation_21_1
+		cementation_21_1 -> "Blister steel"
+		"Blister steel" -> n_21_4
+		n_21_4 -> "Shear steel"
+
+		// Crucible steel, an improvement on cementation
+		"Blister steel" -> crucible_furnace_21_1
+		// TODO: gas is also fine. anything hot, really; the steel is
+		// not interacting with the fuel.
+		"Coke" -> crucible_furnace_21_1
+		"Calcium carbonate" -> crucible_furnace_21_1
+		crucible_furnace_21_1 -> "Crucible steel"
+		// Because no oxygen was blown through the steel, it exceeded
+		// Bessemer steel in both quality and hardenability, so
+		// Huntsman's process was used for manufacturing tool steel
+		// until better methods, utilizing an electric arc, were
+		// developed in the early 20th century
+		//
+		// Quality problems, such as brittleness caused by nitrogen in
+		// the blowing air,[37] prevented Bessemer steel from being
+		// used for many structural applications.[38] Open-hearth
+		// steel was suitable for structural applications
+
+		// The Bessemer process, turning pig iron into steel
+		"Pig iron" -> bessemer_21_1
+		"Clay" -> bessemer_21_1
+		bessemer_21_1 -> "Bessemer steel"
+		
+		// Basic oxygen steelmaking, turning pig iron into steel
+		"Pig iron" -> bos_21_1
+		"Oxygen" -> bos_21_1
+		// TODO: one can also use dolomite instead of calcium oxide,
+		// TODO: the calcium oxide is used as lining. should it be part of the steel recipe, or part of building the furnace?
+		"Calcium oxide" -> bos_21_1
+		bos_21_1 -> "Steel"
+
+		"Iron ore fines" -> hisarna_21_1
+		"Powdered coal" -> hisarna_21_1
+		"Oxygen" -> hisarna_21_1
+		"Calcium carbonate" -> hisarna_21_1
+		hisarna_21_1 -> "Pig iron"
+		
+		"Shear steel" -> "Steel"
+		"Crucible steel" -> "Steel"
+		"Bessemer steel" -> "Steel"
+
+		// Modern furnaces will take a charge of iron of up to 400
+		// tons[4] and convert it into steel in less than 40 minutes,
+		// compared to 10–12 hours in an open hearth furnace.
+
+		// Modern: 1t of pig iron = 1.5t iron ore, 1t of coke, 0.5t limestone, 3.5t air
+
+		// For comparison, an average size charge for a puddling
+		// furnace was 800–900 lb (360–410 kg)[10] while a Bessemer
+		// converter charge was 15 short tons (13,600 kg). The
+		// puddling process could not be scaled up, being limited by
+		// the amount that the puddler could handle. It could only be
+		// expanded by building more furnaces.
+	}
+
+	subgraph {
+		ostwald_22_1 [label="ostwald process", shape="rect"]
+		haber_22_1 [label="haber process", shape="rect"]
+		air_22_1 [label="Air (as a source of nitrogen)"]
+		make_22_1 [label="make", shape="rect"]
+		reduction_22_1 [label="reduction", shape="rect"]
+		
+		"Ammonia" -> ostwald_22_1
+		"Oxygen" -> ostwald_22_1
+		"Platinum" -> ostwald_22_1
+		ostwald_22_1 -> "Nitric acid"
+
+		air_22_1 -> haber_22_1
+		"Hydrogen" -> haber_22_1
+		"Module: Haber process catalyst" -> haber_22_1
+		// Wikipedia claims that triethanolamine is used in the haber
+		// process to capture CO2. Elsewhere, Wikipedia claims that
+		// monoenaolamine is used for CO2 scrubbing instead. And the
+		// world complains that making ammonia releases way too much
+		// CO2, so I'm not sure how much scrubbing is actually
+		// happening… That's why we're not including it at all.
+		haber_22_1 -> "Ammonia"
+
+		// We somewhat simplify the creation of the catalyst, by not first reducing magnetite, making wüstite.		
+		"Magnetite concentrate" -> make_22_1
+		"Aluminium oxide" -> make_22_1
+		"Calcium oxide" -> make_22_1
+		"Potassium oxide" -> make_22_1
+		make_22_1 -> catalyst_precursor_22_1
+
+		catalyst_precursor_22_1 -> reduction_22_1
+		"Hydrogen" -> reduction_22_1
+		reduction_22_1 -> "Module: Haber process catalyst"
+		
+		// The development of hydrogen-resistant chromium-molybdenum
+		// steels made it possible to construct single-walled pipes
+	}
+
+	subgraph {
+		"Molbydenum disulfide" -> roasting_25_1
+		roasting_25_1 -> "Molybdenum trioxide"
+	}
+
+	subgraph {
+		make_26_1 [label="make", shape="rect"]
+		
+		"Methanol" -> make_26_1
+		// Using a catalyst based on iron and molybdenum is more
+		// common nowadays, as it is more economical. Unfortunately,
+		// there is little documentation on how the catalyst is made,
+		// so we opt for the much simpler silver-based one.
+		"Silver" -> make_26_1
+		"Oxygen" -> make_26_1
+		make_26_1 -> "Formaldehyde"
+	}
+
+	subgraph  {
+		"Silver"
+	}
+
+	subgraph {
+		// https://www.youtube.com/watch?v=wPox7MUbvqs
+		
+		or_28_1 [label="OR", shape="diamond"]
+		and_28_1 [label="AND", shape="diamond"]
+		n_28_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		mix_28_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		
+		"Carbon monoxide" -> and_28_1
+		"Hydrogen" -> and_28_1
+		and_28_1 -> or_28_1
+		"Syngas" -> or_28_1
+		
+		or_28_1 -> mix_28_1
+		"Copper" -> mix_28_1
+		"Zinc oxide" -> mix_28_1
+		mix_28_1 -> "Crude methanol"
+
+		"Crude methanol" -> n_28_1
+		"Potassium permanganate" -> n_28_1
+		n_28_1 -> "Dimethyl ether"
+		n_28_1 -> "Methanol"
+	}
+
+	subgraph {
+		electrolytic_oxidation_29_1 [label="electrolytic oxidation", shape="rect"]
+		n_29_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		or_29_1 [label="OR", shape="diamond"]
+
+		"Manganese dioxide" -> or_29_1
+		"Chemical manganese dioxide" -> or_29_1
+		"Electrolytic manganese dioxide" -> or_29_1
+		or_29_1 -> n_29_1 [label="2"]
+		
+		"Potassium hydroxide" -> n_29_1 [label="4"]
+		"Oxygen" -> n_29_1 [label="1", color=grey]
+		n_29_1 -> "Potassium manganate" [label="2"]
+		n_29_1 -> "Water" [label="2", color=grey]
+		"Potassium manganate" -> electrolytic_oxidation_29_1 [label="2"]
+		"Water" -> electrolytic_oxidation_29_1 [label="2", color=grey]
+		electrolytic_oxidation_29_1 -> "Potassium permanganate" [label="2"]
+		electrolytic_oxidation_29_1 -> "Potassium hydroxide" [label="2"]
+		electrolytic_oxidation_29_1 -> "Hydrogen" [label="1"]
+	}
+
+	subgraph {
+		n_30_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		n_30_2 [label="...", shape="rect", fillcolor=blue, style=filled]
+		electrolysis_30_1 [label="electrolysis", shape="rect"]
+		or_30_1 [label="OR", shape="diamond"]
+		
+		"Pyrolusite" -> "Manganese dioxide"
+		"Manganese dioxide" -> n_30_1
+		"Dinitrogen tetroxide" -> n_30_1
+		n_30_1 -> "Chemical manganese dioxide"
+		n_30_1 -> "Dinitrogen tetroxide"
+
+		"Manganese dioxide" -> or_30_1
+		"Chemical manganese dioxide" -> or_30_1
+		or_30_1 -> electrolysis_30_1
+		"Sulfuric acid" -> electrolysis_30_1
+		// TODO: what's used for the electrodes?
+		electrolysis_30_1 -> "Electrolytic manganese dioxide"
+
+		"Ammonia" -> n_30_2
+		"Steam" -> n_30_2
+		n_30_2 -> "Dinitrogen tetroxide"
+		n_30_2 -> "Nitric acid"
+	}
+
+	// Petroleum
+	subgraph {
+		// Crude oil
+		
+		// Acrylic acid
+		// Alkenes (olefins)
+		// Aromatic petrochemicals
+		// Asphalt
+		// Bulk tar
+		// Butene
+		// [x] Diesel fuel
+		// Ethylene
+		// Fuel oil
+		// Gasoline
+		// [x] Jet fuel
+		// [x] Kerosene
+		// Liquefied petroleum gas
+		// Lubricants
+		// Para-Xylene
+		// Paraffin wax
+		// Petroleum coke
+		// Propylene
+		// Sulfur or sulfuric acid
+		// Wax
+
+
+		// The alkanes from pentane (C5H12) to octane (C8H18) are
+		// refined into gasoline, the ones from nonane (C9H20) to
+		// hexadecane (C16H34) into diesel fuel, kerosene and jet
+		// fuel. Alkanes with more than 16 carbon atoms can be refined
+		// into fuel oil and lubricating oil. At the heavier end of
+		// the range, paraffin wax is an alkane with approximately 25
+		// carbon atoms, while asphalt has 35 and up, although these
+		// are usually cracked by modern refineries into more valuable
+		// products.
+		//
+		// The shortest molecules, those with four or fewer carbon
+		// atoms, are in a gaseous state at room temperature. They are
+		// the petroleum gases. Depending on demand and the cost of
+		// recovery, these gases are either flared off, sold as
+		// liquefied petroleum gas under pressure, or used to power
+		// the refinery's own burners.
+
+
+		// When oil gets pumped, it has to first be separated into
+		// water, oil and gas. The water is mostly a nuisance that
+		// needs to be cleaned up and dumped, although it contains
+		// some dissolved gas and some oil. The gas is "wet" and needs
+		// to be dried first, and then needs further processing to be
+		// made useful.
+		//
+		// See https://en.wikipedia.org/wiki/Oil_production_plant
+
+		// Research to improve oil refinery productivity: secondary
+		// and tertiary reocvery.
+
+		distillation_31_1 [label="atmospheric distillation", shape="rect"]
+		distillation_31_2 [label="vacuum distillation", shape="rect"]
+		hydrotreater_31_1 [label="hydrotreater", shape="rect"]
+		hydrotreater_31_2 [label="hydrotreater", shape="rect"]
+		hydrotreater_31_3 [label="hydrotreater", shape="rect"]
+		merox_31_1 [label="merox", shape="rect"]
+
+		steam_cracking_31_1 [label="steam cracking", shape="rect"]
+		steam_cracking_31_2 [label="steam cracking", shape="rect"]
+		steam_cracking_31_3 [label="steam cracking", shape="rect"]
+		steam_cracking_31_4 [label="steam cracking", shape="rect"]
+		steam_cracking_31_5 [label="steam cracking", shape="rect"]
+
+		delayed_coker_31_1 [label="delayed coker", shape="rect"]
+		catalytic_reformer_31_1 [label="catalytic reformer", shape="rect"]
+		isomerization_31_1 [label="isomerization", shape="rect"]
+		desalting_31_1 [label="desalting", shape="rect"]
+		or_31_1 [label="OR", shape="diamond"]
+
+		gas_separator_31_1 [label="gas separator", shape="rect"]
+		gas_separator_31_2 [label="gas separator", shape="rect"]
+
+		sour_gas_31_1 [label="Sour gas\lContains:\l  Hydrogen sulfide\l  Methane (some)\l  Ethane (some)\l  Propane (some)\l  Butane (some)\l"]
+		"Fraction: Light naphtha" [label="Fraction: Light naphtha (5-6 carbon atoms)"]
+		"Fraction: Heavy naphtha" [label="Fraction: Heavy naphtha (6-12 carbon atoms)"]
+		"Fraction: Gas" [label="Fraction: Gas\lContains:\l  Methane\l  Ethane\l  Hydrogen sulfide\l  Propane(?)\l  Butane(?)\l  Hydrogen(?)\l"]
+		// https://ceng.tu.edu.iq/ched/images/lectures/chem-lec/st4/c2/lec.12.pdf
+		"Cracked gas" [label="Cracked gas\nContains:\l  C₁ (51.4%)\l  C₂= (1.5%)\l  C₂ (15.9%)\l  C₃= (3.1%)\l  C₃ (8.2%)\l  C₄= (2.4%)\l  iC₄ (1.0%)\l  C₄ (2.6%)\l  H₂ (13.7%)\l  CO₂ (0.2%)\l"]
+
+
+		{
+			rank=same
+			"Fraction: Atmospheric bottoms"
+			"Fraction: Atmospheric gas oil"
+			"Fraction: Diesel oil"
+			"Fraction: Kerosene"
+			"Fraction: Heavy naphtha"
+			"Fraction: Light naphtha"
+			"Fraction: Gas"
+		}
+		
+		"Crude oil" -> desalting_31_1
+		desalting_31_1 -> "Desalted crude oil"
+
+
+		"Desalted crude oil" -> distillation_31_1
+		"Steam" -> distillation_31_1
+		distillation_31_1 -> "Fraction: Atmospheric bottoms"
+		distillation_31_1 -> "Fraction: Atmospheric gas oil"
+		distillation_31_1 -> "Fraction: Diesel oil"
+		distillation_31_1 -> "Fraction: Kerosene"
+		distillation_31_1 -> "Fraction: Heavy naphtha"
+		distillation_31_1 -> "Fraction: Light naphtha"
+		distillation_31_1 -> "Fraction: Gas"
+
+		"Fraction: Atmospheric bottoms" -> distillation_31_2
+		"Steam" -> distillation_31_2
+		distillation_31_2 -> "Fraction: Light vacuum gas oil"
+		distillation_31_2 -> "Fraction: Heavy vacuum gas oil"
+		distillation_31_2 -> "Fraction: Vacuum resid"
+		distillation_31_2 -> "Fraction: Evacuated non-condensibles"
+
+		// TODO: figure out which catalyst is being used
+		"Fraction: Diesel oil" -> hydrotreater_31_1
+		"Hydrogen" -> hydrotreater_31_1
+		hydrotreater_31_1 -> "Diesel"
+		hydrotreater_31_1 -> sour_gas_31_1
+
+		// It uses a proprietary catalyst…
+		// Unlike the real process, we don't recycle the sodium hydroxide.
+		"Fraction: Kerosene" -> merox_31_1
+		"Sodium hydroxide" -> merox_31_1
+		merox_31_1 -> "Kerosene"
+
+		// TODO: do we want to make cracking more complicated by
+		// modeling the processes for separating the resulting
+		// chemicals?
+		
+		// https://www.essentialchemicalindustry.org/processes/cracking-isomerisation-and-reforming.html
+		// has a seemingly useful table showing the ratios of
+		// outputs depending on inputs… Except it doesn't make
+		// much sense. For example, it manages to crack Ethane
+		// (C₂H₆) into Propylene (C₃H₆) which has _more_ carbon
+		// atoms. We've taken the table as a rough guide and
+		// tweaked it some. Exact values don't matter to us,
+		// anyway.
+		"Fraction: Light naphtha" -> steam_cracking_31_1
+		"Steam" -> steam_cracking_31_1
+		steam_cracking_31_1 -> "Hydrogen"  [label="1%"]
+		steam_cracking_31_1 -> "Methane"   [label="15%"]
+		steam_cracking_31_1 -> "Ethylene"  [label="25-35%"]
+		steam_cracking_31_1 -> "Propylene" [label="16%"]
+		steam_cracking_31_1 -> "Butene"    [label="5%"]
+		steam_cracking_31_1 -> "Butadiene" [label="5%"]
+		steam_cracking_31_1 -> "RPG"	   [label="12%"]
+		steam_cracking_31_1 -> "Hydrogen sulfide"
+
+		"Fraction: Heavy naphtha" -> steam_cracking_31_4
+		"Steam" -> steam_cracking_31_4
+		steam_cracking_31_4 -> "Hydrogen"  [label="1%"]
+		steam_cracking_31_4 -> "Methane"   [label="15%"]
+		steam_cracking_31_4 -> "Ethylene"  [label="25-35%"]
+		steam_cracking_31_4 -> "Propylene" [label="16%"]
+		steam_cracking_31_4 -> "Butene"    [label="5%"]
+		steam_cracking_31_4 -> "Butadiene" [label="5%"]
+		steam_cracking_31_4 -> "RPG"	   [label="19-29%"]
+		steam_cracking_31_4 -> "Fuel oil"  [label="4%"]
+		steam_cracking_31_4 -> "Hydrogen sulfide"
+		
+		// https://www.open.edu/openlearn/science-maths-technology/science/chemistry/introduction-polymers/content-section-3.2.2
+		// specifies that 50% of ethane turns into ethylene, 10%
+		// turns into methane and hydrogen, and the rest remains
+		// unreacted ethane. In the limit, that's 83% ethylene and
+		// 17% methane and hydrogen. We split methane and hydrogen
+		// half and half, for the sake of simplicity.
+		"Ethane" -> steam_cracking_31_2
+		"Steam" -> steam_cracking_31_2
+		steam_cracking_31_2 -> "Hydrogen"  [label="8%"]
+		steam_cracking_31_2 -> "Methane"   [label="8%"]
+		steam_cracking_31_2 -> "Ethylene"  [label="84%"]
+		
+		"Propane" -> steam_cracking_31_3
+		"Steam" -> steam_cracking_31_3
+		steam_cracking_31_3 -> "Hydrogen"  [label="2%"]
+		steam_cracking_31_3 -> "Methane"   [label="27%"]
+		steam_cracking_31_3 -> "Ethylene"  [label="47%"]
+		steam_cracking_31_3 -> "Propylene" [label="24%"]
+
+
+		"Fraction: Light naphtha" -> hydrotreater_31_2
+		"Hydrogen" -> hydrotreater_31_2
+		hydrotreater_31_2 -> "Fraction: Light naphtha (hydrotreated)"
+		hydrotreater_31_2 -> sour_gas_31_1
+
+		// TODO: platinum catalyst
+		"Fraction: Light naphtha (hydrotreated)" -> isomerization_31_1
+		isomerization_31_1 -> "Light naphtha isomerate"
+
+		"Fraction: Heavy naphtha" -> hydrotreater_31_3
+		"Hydrogen" -> hydrotreater_31_3
+		hydrotreater_31_3 -> "Fraction: Heavy naphtha (hydrotreated)"
+		hydrotreater_31_3 -> sour_gas_31_1
+
+		// TODO: platinum catalyst
+		"Fraction: Heavy naphtha (hydrotreated)" -> catalytic_reformer_31_1
+		catalytic_reformer_31_1 -> "Hydrogen"
+		catalytic_reformer_31_1 -> "Reformate"
+		catalytic_reformer_31_1 -> "Reformer gas"
+		// TODO: reformate can be split into aromatics; but which? at least benzene, toluene, ethylbenzene and xylene
+
+		"Fraction: Vacuum resid" -> delayed_coker_31_1
+		delayed_coker_31_1 -> "Coker heavy naphtha" [label="contains some sulfur"]
+		delayed_coker_31_1 -> "Coker distillate" [label="contains some sulfur"]
+		delayed_coker_31_1 -> "Coker light gas oil" [label="contains some sulfur"]
+		delayed_coker_31_1 -> "Coker heavy gas oil" [label="contains some sulfur"]
+		delayed_coker_31_1 -> sour_gas_31_1 [label="contains some sulfur"]
+		// "The value of the coke as a product is typically far below
+		// the cost of the crude oil used to produce it."
+		//
+		// TODO: https://en.wikipedia.org/wiki/Petroleum_coke
+		//
+		// "The yield of coke from the delayed coking process ranges
+		// from about 18 to 30 percent by weight of the feedstock
+		// residual oil"
+		delayed_coker_31_1 -> "Petroleum coke" [label="contains some sulfur"]
+		delayed_coker_31_1 -> "Cracked gas" [label="contains some sulfur"]
+
+		// https://www.researchgate.net/publication/245060487_Experimental_study_and_kinetic_modeling_of_kerosene_thermal_cracking
+		"Kerosene" -> or_31_1
+		"Fraction: Kerosene" -> or_31_1
+		or_31_1 -> steam_cracking_31_5
+		"Steam" -> steam_cracking_31_5
+		steam_cracking_31_5 -> "Ethylene" [label="32wt.%"]
+		steam_cracking_31_5 -> "Propylene" [label="16wt.%"]
+		steam_cracking_31_5 -> "Hydrogen sulfide"
+		// TODO what are the other outputs?
+
+
+		// TODO: We need a coherent story for splitting gases. In an
+		// oil refinery/gas plant, they use kerosene and naphtha to
+		// separate methane/ethane and propane/butane. It's difficult
+		// to find information on other forms of gas separation. Do
+		// refineries use this specific process because it's the only
+		// one that works, or because they have easy access to
+		// kerosene and naphtha?
+		//
+		// We'll also need to separate gases in contexts other than
+		// crude oil refining, and we'll have to deal with other gases
+		// (oxygen, CO₂, ...). And because of the way Factorio works,
+		// it'd be very tedious to have separate processes for
+		// different gases in a gas mixture.
+		//
+		// For the time being, we'll simplify gas separation to a
+		// magic machine that can magically separate all gases.
+
+		"Fraction: Gas" -> gas_separator_31_1
+		gas_separator_31_1 -> "Methane"
+		gas_separator_31_1 -> "Ethane"
+		gas_separator_31_1 -> "Hydrogen sulfide"
+		gas_separator_31_1 -> "Propane"
+		gas_separator_31_1 -> "Butane"
+		
+		sour_gas_31_1 -> gas_separator_31_2
+		gas_separator_31_2 -> "Methane"
+		gas_separator_31_2 -> "Ethane"
+		gas_separator_31_2 -> "Hydrogen sulfide"
+		gas_separator_31_2 -> "Propane"
+		gas_separator_31_2 -> "Butane"
+
+		"Butane" -> deisobutanizer_31_1
+		deisobutanizer_31_1 -> "i-butane"
+		deisobutanizer_31_1 -> "n-butane"
+	}
+
+	// styrene-butadiene rubber
+	{
+		n_32_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+
+		// XXX "soap", free-radical initiators
+		// XXX vulcanization
+		"Styrene" -> n_32_1 [label="25%"]
+		"Butadiene" -> n_32_1 [label="75%"]
+		n_32_1 -> "Styrene-butadiene rubber"
+	}
+
+	{
+		n_33_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		
+		"Benzene" -> n_33_1
+		"Ethylene" -> n_33_1
+		n_33_1 -> "Ethylbenzene"
+
+		// " Currently, al-most all ethylbenzene is produced
+		// commercially by alkylating benzene with ethylene, primarily
+		// via two routes: in the liquid phase with aluminum chloride
+		// catalyst (Friedel-Crafts reaction), or in the vapor phase
+		// with a fixed bed of either a Lewis acid or a synthetic
+		// zeolite catalyst developed by Mobil Corporation. "
+
+		// http://www.tc.bci.tu-dortmund.de/Downloads/Praktika/tc30_styrene_english.pdf
+	}
+
+	{
+		// https://www.youtube.com/watch?v=FXD9zDs9ygU - How It's Made Clay
+
+		crush_34_1 [label="crush", shape="rect"]
+		furnace_34_1 [label="dry", shape="rect"]
+		mill_34_1 [label="mill", shape="rect"]
+		filter_34_1 [label="filter", shape="rect"]
+		
+		"Raw clay" -> crush_34_1
+		crush_34_1 -> "Crushed clay"
+		"Crushed clay" -> furnace_34_1
+		furnace_34_1 -> "Dried, crushed clay"
+		"Dried, crushed clay" -> mill_34_1
+		mill_34_1 -> "Milled, dried clay"
+		"Milled, dried clay" -> filter_34_1
+		filter_34_1 -> "Clay powder"
+	}
+
+	{
+		or_35_1 [label="OR", shape="diamond"]
+		furnace_35_1 [label="furnace", shape="rect"]
+		
+		"Raw clay" -> or_35_1
+		"Clay powder" -> or_35_1
+		or_35_1 -> furnace_35_1
+		furnace_35_1 -> "Brick"
+	}
+
+	{
+		make_36_1 [label="make", shape="rect"]
+		make_36_2 [label="make", shape="rect"]
+		
+		"Wood" -> make_36_1
+		make_36_1 -> "Wood board"
+
+		// No nails or glue needed, we trust in the power of joints.
+		"Wood board" -> make_36_2
+		make_36_2 -> "Wooden chest"
+	}
+
+	subgraph {
+		sugarcane_mill_37_1 [label="juice extraction", shape="rect"]
+		juice_clarification_37_1 [label="juice clarification", shape="rect"]
+		juice_evaporation_37_1 [label="juice evaporation", shape="rect"]
+		syrup_clarification_37_1 [label="syrup clarification", shape="rect"]
+		crystallization_37_1 [label="crystallization", shape="rect"]
+
+		n_37_1 [label="...", shape="rect", fillcolor=blue, style=filled]
+		or_37_1 [label="OR", shape="diamond"]
+		
+		"Sugarcane" -> sugarcane_mill_37_1
+		sugarcane_mill_37_1 -> "Sugarcane juice"
+		// TODO: uses for bagasse, see https://en.wikipedia.org/wiki/Bagasse
+		sugarcane_mill_37_1 -> "Bagasse"
+		
+		"Sugarcane juice" -> juice_clarification_37_1
+		"Calcium hydroxide" -> juice_clarification_37_1
+		juice_clarification_37_1 -> "Clarified sugarcane juice"
+
+		"Clarified sugarcane juice" -> juice_evaporation_37_1
+		juice_evaporation_37_1 -> "Sugarcane syrup"
+
+		"Sugarcane syrup" -> syrup_clarification_37_1
+		syrup_clarification_37_1 -> "Clarified sugarcane syrup"
+
+		"Clarified sugarcane syrup" -> crystallization_37_1
+		crystallization_37_1 -> "Molasses"
+		crystallization_37_1 -> "Brown sugar"
+
+		"Sugarcane juice" -> or_37_1
+		"Clarified sugarcane juice" -> or_37_1
+		"Sugarcane syrup" -> or_37_1
+		"Clarified sugarcane syrup" -> or_37_1
+		"Brown sugar" -> or_37_1
+		or_37_1 -> n_37_1
+		n_37_1 -> "Ethanol"
+	}
+
+	{
+		craft_38_1 [label="craft", shape="parallelogram"]
+		craft_38_2 [label="craft", shape="parallelogram"]
+		
+		"Brick" -> craft_38_1
+		craft_38_1 -> "Stone pipe"
+
+		"Brick" -> craft_38_2
+		craft_38_2 -> "Basic kiln"
+	}
+
+	// Lead
+	subgraph {
+		// Sources:
+		// - http://sormakmine.com/en/products/102
+		// - https://en.wikipedia.org/wiki/Lead_smelting
+		// - https://en.wikipedia.org/wiki/Lead#Production
+		// - https://www.britannica.com/technology/lead-processing/Mining-and-concentrating
+		// - https://en.wikipedia.org/wiki/Betterton%E2%80%93Kroll_process
+		// - https://www.britannica.com/technology/lead-processing/Refining#ref82082
+		// - https://link.springer.com/content/pdf/10.1007/BF01052570.pdf
+
+		anode_mud_39_1       [label="Anode mud\nContains:\l  Antimony\l  Arsenic\l  Gold\l  Silver\l"]
+		betterton_kroll_39_1 [label="betterton-kroll process", shape="rect"]
+		blast_furnace_39_1   [label="blast furnace", shape="rect"]
+		crushing_39_1        [label="crushing", shape="rect"]
+		dross_39_1           [label="Dross\nContains:\l  Copper (majority)\l  Nickel\l  Cobalt\l  Zinc\l"]
+		drossing_39_1        [label="drossing", shape="rect"]
+		electrolysis_39_1    [label="electrolysis", shape="rect"]
+		froth_flotation_39_1 [label="froth flotation", shape="rect"]
+		milling_39_1         [label="milling", shape="rect"]
+		n_39_3               [label="...", shape="rect", fillcolor=blue, style=filled]
+		parkes_39_1          [label="parkes process", shape="rect"]
+		roasting_39_1        [label="roasting", shape="rect"]
+		slag_39_1            [label="Slag\nContains:\l  Antimony\l  Arsenic\l"]
+		softening_39_1       [label="softening", shape="rect"]
+
+		"Galena" -> "Lead sulfide ore"
+		"Lead sulfide ore" -> crushing_39_1
+		crushing_39_1 -> "Crushed lead sulfide ore"
+		"Crushed lead sulfide ore" -> milling_39_1
+		milling_39_1 -> "Milled lead sulfide ore"
+
+		"Milled lead sulfide ore" -> froth_flotation_39_1
+		// TODO: what alternatives to pine oil are there?
+		"Pine oil" -> froth_flotation_39_1
+		"Potassium amyl xanthate" -> froth_flotation_39_1
+		// TODO: anything useful in the gangue?
+		froth_flotation_39_1 -> "Lead sulfide concentrate"
+
+		"Lead sulfide concentrate" -> roasting_39_1
+		roasting_39_1 -> "Roasted lead sulfide concentrate"
+		roasting_39_1 -> "Sulfur dioxide"
+
+		"Roasted lead sulfide concentrate" -> blast_furnace_39_1
+		// TODO: does it have to be coke?
+		"Coke" -> blast_furnace_39_1
+		blast_furnace_39_1 -> "Lead bullion" [headlabel="(l)"]
+		
+		"Lead bullion" -> drossing_39_1 [taillabel="(l)"]
+		drossing_39_1 -> dross_39_1
+		drossing_39_1 -> "Drossed lead bullion" [headlabel="(l)"]
+
+		"Drossed lead bullion" -> softening_39_1 [taillabel="(l)"]
+		"Steam" -> softening_39_1
+		"Sulfur" -> softening_39_1
+		softening_39_1 -> slag_39_1
+		softening_39_1 -> "Softened lead bullion" [headlabel="(l)"]
+		
+		// Parkes process
+		"Softened lead bullion" -> parkes_39_1 [taillabel="(l)"]
+		// "Less than 1 percent by weight" zinc
+		"Zinc" -> parkes_39_1
+		parkes_39_1 -> "Doré" [headlabel="(l)"]
+		parkes_39_1 -> "Desilvered lead" [headlabel="(l)"]
+		// The zinc is recovered
+		parkes_39_1 -> "Zinc"
+		// TODO: recover gold and silver
+		
+		// Betterton-Kroll process
+		"Calcium" -> betterton_kroll_39_1
+		"Magnesium" -> betterton_kroll_39_1
+		"Chlorine" -> betterton_kroll_39_1
+		"Desilvered lead" -> betterton_kroll_39_1 [taillabel="(l)"]
+		betterton_kroll_39_1 -> "Lead"
+		betterton_kroll_39_1 -> "Bismuth"
+		// TODO: more details on the Betterton-Kroll process, what
+		// kind of vessel it's done in, how the bismuth is recovered
+
+		// Betts process
+		"Lead fluorosilicate" -> electrolysis_39_1
+		// TODO: "fluosilicic acid is produced as a by-product of the
+		// treatment of phosphate rock in fertilizer manufacture."
+		"Hexafluorosilicic acid" -> electrolysis_39_1
+		"Pure lead cathode" -> electrolysis_39_1
+		"Drossed lead bullion" -> n_39_3 [taillabel="(l)"]
+		n_39_3 -> "Impure lead anode"
+		"Impure lead anode" -> electrolysis_39_1
+		electrolysis_39_1 -> anode_mud_39_1
+		electrolysis_39_1 -> "Very pure lead"
+		// TODO: recover gold, silver, bismuth from anode mud
+		// TODO: possibly recover other metals from the electrolyte
+		// TODO: where does the pure lead cathode come from?
+		// TODO: how much purer is this lead than the lead produced by the betterton-kroll process?
+	}
+
+	// Refining the silver and gold we get from refining lead
+	subgraph {
+		// Sources:
+		// - https://www3.epa.gov/ttn/chief/ap42/ch11/final/c11s25.pdf
+		
+		// Note that these processes are specifically for doré, i.e. a
+		// mix of gold and silver. For gold with other impurities,
+		// we'd have more outputs.
+
+		// Some of these processes output gold powder IRL. We're
+		// outputting it as solid gold, to simplify recipes.
+
+		// TODO: a lot of these processes should output gas
+		
+		acid_parting_40_1 [label="acid parting",     shape="rect"   ]
+		blow_40_1         [label="miller process",   shape="rect"   ]
+		furnace_40_1      [label="furnace",          shape="rect"   ]
+		heat_40_1         [label="salt cementation", shape="rect"   ]
+		heat_40_2         [label="sulfur process",   shape="rect"   ]
+		heat_40_3         [label="heat",             shape="rect"   ]
+		heat_40_4         [label="heat",             shape="rect"   ]
+		inquart_40_1      [label="inquart",          shape="rect"   ]
+		mix_40_1          [label="mix",              shape="rect"   ]
+		mix_40_2          [label="mix",              shape="rect"   ]
+		mix_40_3          [label="mix",              shape="rect"   ]
+		mix_40_4          [label="mix",              shape="rect"   ]
+		mix_40_5          [label="mix",              shape="rect"   ]
+		mix_40_6          [label="mix",              shape="rect"   ]
+		or_40_1           [label="OR",               shape="diamond"]
+		or_40_2           [label="OR",               shape="diamond"]
+		smash_40_1        [label="smash",            shape="rect"   ]
+		
+		// Salt cementation
+		"Doré" -> heat_40_1 [taillabel="(s)"]
+		"Sodium chloride" -> heat_40_1
+		"Clay" -> furnace_40_1
+		furnace_40_1 -> "Burnt clay"
+		"Burnt clay" -> or_40_1
+		"Brick" -> smash_40_1
+		smash_40_1 -> "Brick dust"
+		"Brick dust" -> or_40_1
+		or_40_1 -> heat_40_1
+		heat_40_1 -> "93% gold"
+		heat_40_1 -> "Silver chloride"
+
+		// Sulfur process
+		"Doré" -> heat_40_2 [taillabel="(s)"]
+		"Sulfur" -> heat_40_2
+		heat_40_2 -> "93% gold"
+		heat_40_2 -> "Silver sulfide"
+
+		// Acid parting
+		"Doré" -> inquart_40_1 [taillabel="(l)"]
+		"Silver" -> inquart_40_1 [taillabel="(l)"]
+		inquart_40_1 -> "Inquarted gold" [headlabel="(s)"]
+		"Inquarted gold" -> acid_parting_40_1 [taillabel="(s)"]
+		"Nitric acid" -> acid_parting_40_1
+		acid_parting_40_1 -> "99.5% gold" [headlabel="(s)"]
+		acid_parting_40_1 -> "Silver nitrate" [headlabel="(aq)"]
+		acid_parting_40_1 -> "Nitrogen dioxide" [headlabel="(g)"]
+		// We're not using aqua regia to part gold and silver here,
+		// because that only works well for up to 10% silver in gold,
+		// and our mix likely leans heavy on the silver side (we're
+		// still inquarting the gold, though, just for fun.)
+		//
+		// But we can use aqua regia to purify our almost-pure gold.
+		"93% gold" -> or_40_2 [taillabel="(s)"]
+		"99.5% gold" -> or_40_2 [taillabel="(s)"]
+		or_40_2 -> mix_40_1
+		"Nitric acid" -> "Aqua regia"
+		"Hydrochloric acid" -> "Aqua regia"
+		"Aqua regia" -> mix_40_1
+		mix_40_1 -> "99.999% gold" [headlabel="(s)"]
+		// we don't output the impurities in this step, because we don't really know what they are
+
+		// Miller process
+		"Chlorine" -> blow_40_1 [taillabel="(g)"]
+		"Doré" -> blow_40_1 [taillabel="(l)"]
+		blow_40_1 -> "99.5% gold" [headlabel="(l)"]
+		// Supposedly, some gold gets trapped in the silver chloride,
+		// but we don't care.
+		blow_40_1 -> "Silver chloride" [headlabel="(s)"]
+
+		// Wohlwill process
+		//
+		// We can't use the Wohlwill process on the gold and silver
+		// mix we get from refining lead, as the Wohlwill process
+		// requires at least 95% pure gold. We could, however, use the
+		// Wohlwill process to further refine the outputs of the
+		// previous process. It's not really economical when already
+		// having to deal with the other processes, though.
+
+		// TODO: recover silver from silver nitrate, silver chloride and silver sulfide
+
+		// Recover silver from chlorides and nitrates
+		"Sodium hydroxide" -> mix_40_2 [taillabel="(s)"]
+		// TODO: really? sugar? is there something more conventional we can use?
+		"Sugar" -> mix_40_2 [taillabel="(s)"]
+		"Silver chloride" -> mix_40_2 [taillabel="(s)"]
+		mix_40_2 -> "Silver" [headlabel="(s)"]
+
+		"Silver nitrate" -> heat_40_4
+		heat_40_4 -> "Silver" [headlabel="(s)"]
+		heat_40_4 -> "Nitrogen dioxide" [headlabel="(g)"]
+		
+		"Silver nitrate" -> mix_40_3 [taillabel="(aq)"]
+		"Hydrochloric acid" -> mix_40_3 [taillabel="(aq)"]
+		mix_40_3 -> "Silver chloride" [headlabel="(s)"]
+		mix_40_3 -> "Nitric acid" [headlabel="(aq)"]
+
+		"Silver nitrate" -> mix_40_4 [taillabel="(aq)"]
+		"Copper" -> mix_40_4 [taillabel="(s)"]
+		mix_40_4 -> "Copper nitrate" [headlabel="(aq)"]
+		mix_40_4 -> "Silver" [headlabel="(s)"]
+
+		"Silver nitrate" -> mix_40_5 [taillabel="(aq)"]
+		"Sodium chloride" -> mix_40_5 [taillabel="(aq)"]
+		mix_40_5 -> "Silver chloride" [headlabel="(s)"]
+		mix_40_5 -> "Sodium nitrate" [headlabel="(aq)"]
+
+		"Silver chloride" -> mix_40_6 [taillabel="(s)"]
+		"Potassium hydroxide" -> mix_40_6 [taillabel="(s)"]
+		mix_40_6 -> "Potassium chloride" // TODO: what state?
+		mix_40_6 -> "Silver oxide" [headlabel="(s)"]
+
+		"Silver chloride" -> heat_40_3 [taillabel="(s)"]
+		heat_40_3 -> "Silver" [headlabel="(s)"]
+		heat_40_3 -> "Chlorine" [headlabel="(g)"]
+	}
+
+	// Nitrogen dioxide to nitric acid
+	{
+		mix_41_1 [label="mix", shape="rect"   ]
+		or_41_1  [label="OR",  shape="diamond"]
+		
+		"Nitrogen dioxide" -> mix_41_1
+		"Water" -> or_41_1
+		"Hydrogen peroxide" -> or_41_1
+		or_41_1 -> mix_41_1
+		mix_41_1 -> "Nitric acid"
+	}
+
+	// Potassium oxide
+	subgraph {
+		heat_42_1 [label="heat", shape="rect"]
+		heat_42_2 [label="heat", shape="rect"]
+		heat_42_3 [label="heat", shape="rect"]
+		mix_42_1  [label="mix",  shape="rect"]
+		mix_42_2  [label="mix",  shape="rect"]
+		mix_42_3  [label="mix",  shape="rect"]
+		mix_42_4  [label="mix",  shape="rect"]
+		
+		"Potassium nitrate" -> heat_42_1 [taillabel="(s)"]
+		"Potassium" -> heat_42_1 [taillabel="(s)"]
+		heat_42_1 -> "Potassium oxide" [headlabel="(s)"]
+		heat_42_1 -> "Nitrogen" [headlabel="(g)"]
+
+		"Oxygen" -> heat_42_2 [taillabel="(g)"]
+		// The reaction is with molten potassium, but heating the
+		// solid will melt it, anyway
+		"Potassium" -> heat_42_2 [taillabel="(s)"]
+		heat_42_2 -> "Potassium oxide" [headlabel="(s)"]
+		heat_42_2 -> "Potassium peroxide" [headlabel="(s)"]
+		heat_42_2 -> "Potassium superoxide" [headlabel="(s)"]
+		
+		"Potassium peroxide" -> heat_42_3 [taillabel="(s)"]
+		heat_42_3 -> "Potassium oxide" [headlabel="(s)"]
+		heat_42_3 -> "Oxygen" [headlabel="(g)"]
+		
+		"Potassium hydroxide" -> mix_42_1 [taillabel="(s)"]
+		"Potassium" -> mix_42_1 [taillabel="(l)"]
+		mix_42_1 -> "Potassium oxide" [headlabel="(s)"]
+		mix_42_1 -> "Hydrogen" [headlabel="(g)"]
+
+		"Potassium peroxide" -> mix_42_2 [taillabel="(s)"]
+		"Water" -> mix_42_2 [taillabel="(l)"]
+		mix_42_2 -> "Potassium hydroxide" [headlabel="(s)"]
+		mix_42_2 -> "Oxygen" [headlabel="(g)"]
+
+		"Potassium superoxide" -> mix_42_3 [taillabel="(s)"]
+		"Water" -> mix_42_3 [taillabel="(l)"]
+		mix_42_3 -> "Oxygen" [headlabel="(g)"]
+		mix_42_3 -> "Hydrogen peroxide" [headlabel="(l)"]
+		mix_42_3 -> "Potassium hydroxide" [headlabel="(s)"]
+
+		"Potassium hydroxide" -> mix_42_4 [taillabel="(s)"]
+		"Carbon dioxide" -> mix_42_4 [taillabel="(g)"]
+		mix_42_4 -> "Potassium carbonate" [headlabel="(s)"]
+		mix_42_4 -> "Potassium bicarbonate" [headlabel="(s)"]
+		mix_42_4 -> "Water" [headlabel="(l)"]
+
+		// We can react potassium superoxide with air: the moisture in
+		// the air reacts with potassium superoxide to make potassium
+		// hydroxide, which reacts with carbon dioxide, making more
+		// water. In that way, it can work as an air scrubber. WHat do
+		// we do with the hydrogen peroxide, though?
+	}
+
+	// Wood ash / pot ash
+	{
+		// Sources:
+		// - https://cavemanchemistry.com/oldcave/projects/potash/
+
+		burn_43_1 [label="burn", shape="rect"]
+		dissolve_43_1 [label="dissolve", shape="rect"]
+		insoluble_43_1 [label="Insolubles\nContains:\l  Silica\l  Calcium carbonate\l"]
+		solution_43_1 [label="Solution\nContains:\l  Sodium chloride\l  Potassium chloride\l  Sodium carbonate\l  Potassium carbonate\l"]
+		do_precipitate_43_1 [label="precipitate", shape="rect"]
+		precipitate_43_1 [label="Precipitate\nContains:\l  Sodium chloride\l  Potassium chloride\l"]
+
+		"Wood" -> burn_43_1
+		burn_43_1 -> "Wood ash"
+		
+		"Water" -> dissolve_43_1 [taillabel="(l)"]
+		"Wood ash" -> dissolve_43_1 [taillabel="(s)"]
+		dissolve_43_1 -> insoluble_43_1 [headlabel="(s)"]
+		dissolve_43_1 -> solution_43_1 [headlabel="(aq)"]
+		solution_43_1 -> do_precipitate_43_1 [taillabel="(aq)"]
+		do_precipitate_43_1 -> precipitate_43_1 [headlabel="(s)"]
+		do_precipitate_43_1 -> "Sodium carbonate" [headlabel="(s)"]
+		do_precipitate_43_1 -> "Potassium carbonate" [headlabel="(s)"]
+	
+	
+		// "Wood ash" -> "Calcium carbonate" [label="45%"]
+		// "Wood ash" -> "Potash" [label="10%"]
+		// "Wood ash" -> "Phosphate" [label="1%"]
+	}
+}
+
+// TODO: ethanol from ethylene
+
+// "Fractionators are common in many of the conversion units in a
+// refinery. They are not considered separate process units but rather
+// components of the conversion unit they are attached to."
+
+// TODO: Propane Dehydrogenation to make propylene
+// TODO: coal-to-olefins
+// TODO: resid hydrocracker
+// TODO: visbreaker
+// TODO: https://en.wikipedia.org/wiki/Delayed_coker#Uses_of_petroleum_coke
+// TODO: Fischer–Tropsch_process
+// TODO: https://tu-freiberg.de/sites/default/files/media/professur-fuer-energieverfahrenstechnik-und-thermische-rueckstandsbehandlung-16460/publikationen/hydrogen_separation_from_coke_oven_gas.pdf
+
+
+// ethene = ethylene
+// propene = propylene
+// butene = butylene
+
+
+// Atmospheric distillation - All crude oil yields some amount of
+// propane when distilled. Typically, it leaves the distillation tower
+// in a wet gas stream that is sent to the saturated gas plant for
+// separation from lighter gases (methane and ethane) that are then
+// used for fuel
+//
+// FCC - In the FCC conversion process, large amounts of C3s are
+// produced, including both saturated propane and unsaturated
+// propylene. Often the unsaturated olefins are separated for use as
+// feed to the alkylation unit
+//
+// Coker - Similar to the FCC, the coker conversion process generates
+// mixed C3s containing saturated and unsaturated molecules. However,
+// it is less common for coker C3s to have their olefins separated out
+//
+// Reformer - Reformers will yield approximately 5% (by volume) of C3s
+// in the conversion process.
+
+// "Butadiene is typically isolated from the other four-carbon
+// hydrocarbons produced in steam cracking by extractive distillation
+// using a polar aprotic solvent such as acetonitrile,
+// N-methyl-2-pyrrolidone, furfural, or dimethylformamide, from which
+// it is then stripped by distillation.[9] "
+
+
+// TODO: add waste outputs to most processes
+
+// TODO: https://www.steel.org/%7E/media/Images/AISI/Making%20Steel/finishing2_540.gif https://www.steel.org/%7E/media/Images/AISI/Making%20Steel/flowline1_540.gif
