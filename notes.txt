@@ -1,0 +1,341 @@
+# -*-org-*-
+
+* Factorio physics
+** Mass versus volume
+   Factorio generally doesn't care about either mass or volume.
+   Quantities in recipes are largely just made up to be balanced well,
+   and the game never uses units of mass or volume. For example, one
+   iron ore turns into one iron plate, and eight iron plates turn into
+   one iron chest.
+
+   However, volume has much less of a meaning than mass in Factorio:
+   like in most games, huge items can be stored in tiny items, and
+   items can be stored in themselves. We can store a large number of
+   cars in the trunk of a single car.
+
+   Mass, on the other hand, could be incorporated into the recipe
+   making process, by working back from real world densities and
+   areas/volumes. For example, we know that brick covers a 1x1 area of
+   tiles. We also know that a tile is a square with an area of 1m²,
+   and that bricks used for pavement are 6cm high in the real world.
+   Given the real world density of, say, clay bricks (1922 kg/m³), we
+   know that to cover a tile with clay bricks, we need 115.32 kg of
+   clay bricks. If we further know that clay loses ~15% of its mass
+   when firing, then we know that to make 115.32 kg of clay bricks, we
+   need 135.67 kg of clay.
+
+   By itself, this information is not very useful. Recipes are still
+   dimensionless and we will turn N units of clay into M units of clay
+   brick. However, if we work through the same process for another
+   clay product, say clay pipes, then we can relate the two recipes,
+   and figure out how much more or less units of clay it should take
+   to make bricks vs pipes. The player will still not be presented
+   with real world units of mass, volume or density, but making a tea
+   cup won't somehow require more clay than paving a tile, and the
+   exact ratios will be based on the real world.
+
+   Many items will have relative masses established via the recipe
+   graph. When burning J wood makes K wood ash, which in turn can be
+   refined into M potash and used to make N gunpowder, then all of
+   these masses are related. However, items may end up not being
+   related at all, and one unit of stone may be incomprable to one
+   unit of iron plate.
+
+** Distance, speed of travel
+   A tile is a square with an area of 1m², which allows us to relate
+   sizes of entities to the real world. However, the speed of travel
+   in Factorio is much higher. The character runs at a default speed
+   of 32 km/h, which can further be boosted with upgrades and
+   different tiles. In comparison, the average jogging speed in the
+   real world is around 10 km/h. Similarly, cars in Factorio are
+   unreasonably fast: their lowest speed is 87.6 km/h and their
+   highest speed is 208.1 km/h.
+
+   Therefore, when we decide on distances, e.g. how far apart to spawn
+   rare ores, we should keep this difference in speeds in mind.
+
+** Liquid amounts
+   Factorio uses the real concept of heat capacity for heating up
+   liquids, and for turning water into steam. Water specifically has a
+   heat capacity of 200 J per Kelvin and unit of water. If we simply
+   equated this to water's real heat capacity (4182 J / (K kg)), then
+   one unit of water would correspond to about 50 g.
+
+   However, this equivalence implies that a tank, which holds 25,000
+   units of fluid, holds just 1250 kg of water – or 1250 liters at the
+   real world density of water. This is problematic, because it would
+   make the tank roughly 20cm "high".
+
+   If we ignore heat capacity and instead use the tank's volume as
+   rendered in game (a diameter of 2.8m and roughly 2m high), then
+   25,000 units correspond to 49,260 liters, or almost 2 L per unit of
+   water. Such large amounts per unit wouldn't be useful. A single
+   unit cannot be further divided. Also, any machine producing very
+   low amounts of water would not work accurately. Testing has shown
+   that machines that produce <= 3 units of water per second are not
+   working correctly, producing no water at all.
+
+   In the end, we may have to tweak the capacity of tanks, possibly
+   the capacity/throughput of pipes and pumps, and maybe even the heat
+   capacity.
+
+** Steam power and heat capacity
+   Factorio uses the real concept of heat capacity for heating up
+   liquids, and for turning water into steam. Water specifically has a
+   heat capacity of 200 J per Kelvin and unit of water. Unfortunately,
+   Factorio does not model the energy needed for transitioning from
+   the liquid state to the gaseous state. Instead, it simply assumes
+   that once the temperature reaches 100 degrees Celsius, the water
+   will become steam. Thus, making steam requires a lot less energy
+   than it should. It also (conceptually) releases too little energy
+   when condensing.
+
+   Another issue lies with the way steam engines operate: they can
+   extract energy from steam all the way down to 15 degrees Celsius,
+   when they should (at best) only work till 100 degrees Celsius. On
+   the other hand, steam engines do not output the cooled down water
+   or steam, which means we cannot use the waste heat for other
+   purposes to increase overall efficiency. In that way, it might seem
+   "fair" that the steam engine can extract all the energy.
+
+** Accumulators and solar power
+   Both accumulators and solar powers have way wrong efficiencies
+   compared to the real world.
+
+   For solar, consider the real world baseline: our solar panels are
+   10-20% efficient, and can produce 300 W/m² in extremely sunny areas
+   (i.e. Africa). Thus, at perfect efficiency, we would expect 3000
+   W/m². Solar panels in Factorio produce 20 kW / m², an absurd
+   amount. Either they are magic, or we are so close to the sun that
+   we should all be dead.
+
+   Interestingly, accumulators are vastly underpowered in comparison.
+   Storing energy at 0.17 Wh/L. Meanwhile, real world densities are as
+   such:
+
+   | Kind           | Density in Wh/L |
+   |----------------+-----------------|
+   | Lead acid      |              90 |
+   | Nickel cadmium |          50-150 |
+   | Li-Ion         |         250-693 |
+
+* Random collection of notes, to be sorted through
+** Mining
+   when mining, we get a mix of ore and rock. there will be a series
+   of steps to liberate the ore, increasing the overall yield of
+   ore.
+
+   ores often appear together. for example, malachite often occurs
+   together with azurite, goethite and calcite. the ratios vary, and it
+   would not be viable to add entities for all possible combinations.
+   maybe instead we can address this by having mixed ore patches. we'd
+   also need some pure patches, that don't require filtering, for early
+   game.
+
+   to solve the issue of early-game purification, we could spawn pure
+   metals in the starting area.
+
+   ideally, crushing and filtering raw ore leaves us with fewer items
+   overall. we've removed the gangue, and made the ore much more compact,
+   which should make it easier to transport, i.e. need less belt
+   throughput.
+
+   basically a loop of crushing and filtering, trying to crush smaller
+   and smaller to be able to extract as much as possible.
+
+   need to balance filtering to get more metal with filtering to improve purity
+
+   several levels of crushing.
+
+   different metals might need different crushers; e.g. gold is too soft for some
+
+   fractioning.
+
+   direct shipping ore
+
+   The separation of mineral from gangue is known as mineral processing,
+   mineral dressing, or ore dressing. It is a necessary, and often
+   significant, aspect of mining. It can be a complicated process,
+   depending on the nature of the minerals involved.[2] For example,
+   galena, an ore of lead, is usually found in large pieces within its
+   gangue, so it does not normally need extensive processing to remove
+   it; but cassiterite, the chief ore of tin, is usually disseminated as
+   very small crystals throughout its gangue, so when it is mined from
+   hard rock, the ore-bearing rock first needs to be crushed very
+   finely,[3] and then has to be subjected to sophisticated processes to
+   separate the ore.
+
+
+   "Relating to the different subsets of ore types, I would say this: 6
+   would be the definite limit, I'd say.. In the copper example, it's
+   clear enough: Tenorite requires less carbon than Cuprite, Malochite
+   and Chalcocite need pre-processing, Chalcopyrite and Bornite need 2
+   steps pre-processing plus an additional input"
+** Copper
+   There are many ores, but they largely boil down to copper sulfides,
+   copper oxides and native copper. There's no point in being more
+   fine-grained than that.
+*** Processing
+	Leaching oxides, pyrometallurgy for sulfides. Can leach sulfides
+	but requires bacteria.
+
+	"One of the biggest advantages of using leaching is that low grade
+	ores that would be uneconomic to smelt become economic to leach. This
+	is largely due to the much lower energy costs of leaching and also to
+	the lower capital and employment costs of the process."
+
+	"As of 2005, roasting is no longer common in copper concentrate
+	treatment, because its combination with reverberatory furnaces is not
+	energy efficient and the SO2 concentration in the roaster offgas is
+	too dilute for cost-effective capture.[8] Direct smelting is now
+	favored, e.g. using the following smelting technologies: flash
+	smelting, Isasmelt, Noranda, Mitsubishi or El Teniente furnaces.[8] "
+
+	"Gill quotes a copper in slag value of 0.23% for a wet-charged
+	reverberatory furnace vs 0.37% for a calcine-charged furnace"
+
+	"The vertical edges of the stainless steel plates are covered with
+	tight-fitting polymer edge strips to prevent copper depositing around
+	the edge of the cathode plate and so make it easier to strip the
+	cathode copper from them"
+
+	"The bottom of the cathode plates were masked with a thin film of wax,
+	again to prevent the copper depositing around the bottom edge"
+
+	"Commonly sulfuric acid is used as a leachant for copper oxide,
+	although it is possible to use water, particularly for ores rich in
+	ultra-soluble sulfate minerals"
+*** Roasting
+	Roasting CuFeS₂ (Chalcopyrite) has (primarily) these two reactions:
+	2CuFeS₂ + 4O₂ → 2FeO + Cu₂S + 3SO₂
+	2Cu₂S + 3O₂ → 2Cu₂O + 2SO₂
+
+	When we later smelt the calcine into matte, the following reaction occurs:
+	Cu₂O + FeS → Cu₂S + FeO
+	which means we'll convert the copper oxide we made back to copper sulfide.
+
+	Converting the matte into blister copper, finally, reduces the copper:
+	Cu₂S + O₂ → 2Cu + SO₂
+
+	Therefore, when roasting and smelting, we only need to roast partially.
+
+	This also suggests that if we roast fully, all the copper sulfide
+	will become copper oxide, which we'd be able to leach with
+	sulfuric acid.
+** Links
+   https://www.miga.org/sites/default/files/archive/Documents/CopperSmelting.pdf
+   https://www.britannica.com/technology/copper-processing/Roasting-smelting-and-converting
+   https://en.wikipedia.org/wiki/IsaKidd_refining_technology
+   https://copperalliance.org.uk/knowledge-base/education/education-resources/copper-mining-extraction-oxide-ores/
+   https://copperalliance.org.uk/knowledge-base/education/education-resources/copper-mining-extraction-sulfide-ores/
+   https://en.wikipedia.org/wiki/Tailings
+   https://www.youtube.com/watch?v=mmkvlLW2z2s - Magnetite and Haematite
+   https://www.youtube.com/watch?v=7MvXv66b5h4 - Rock and Mineral Identification
+   https://www.youtube.com/watch?v=Wy6srgxvgbw - Pyro and Hydrometallurgical Copper Processing P3
+   https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119078326.ch2
+   https://www.911metallurgist.com/melting-cathode-copper-electric-furnace/
+   https://superfund.arizona.edu/learning-modules/tribal-modules/copper/processing
+   http://www.euromines.org/files/mining-europe/mining-techniques/batforheapleaching-feb2013-c.zanbak-euromines.pdf
+   https://www.processingmagazine.com/home/article/15587477/agglomeration-technique-improves-heap-leaching-process
+   https://en.wikipedia.org/wiki/IsaMill
+   https://www.ausetute.com.au/smeltcu.html
+   https://core.ac.uk/download/pdf/48313603.pdf
+   https://patentimages.storage.googleapis.com/97/9f/78/bd4f0b31959631/US3751240.pdf
+** Random notes
+   Isalmelt:
+	 - ~60% Cu in matte
+	 - 0.75% Cu in slag
+	 - 25% SO2 in offgas
+
+   - the further from spawn, the less rich ores get
+   - tank leaching vs heap leaching
+   - look into the roughing, cleaning and scavenging steps of froth
+	 flotation, and see if we want to model those.
+   - IsaMill might be a tech upgrade that makes milling cheaper or produce more output (to reflect the fact that IsaMill output works better with froth flotation)
+
+** Bronze
+   Probably not needed for our mod.
+** Laser turrets
+   laser turrets should have huge energy draw, requiring dedicated accumulators. probably increase their dps.
+** Coal processing
+   - washing
+	 - https://www.youtube.com/watch?v=qFxQRe3txG8 - Advanced Dry Coal Preparation Technology
+   - wood picking
+   - sizing
+	 - rice
+	 - nut
+	 - buck
+	 - pea
+	 - barley
+	 - #4
+	 - #5
+   - kinds of coal
+	 - anthracite
+	 - bituminous coal
+	 - Subbituminous
+	 - lignite
+   - coke
+   - https://en.wikipedia.org/wiki/Flue-gas_desulfurization
+   - Coal gasification
+   - Side products
+	 - Dephenolized cresylic acid
+	 - Catechols
+	 - Napththa
+	 - Phenol
+	 - Fly ash -> Cement
+   - power generation
+	 - https://www.youtube.com/watch?v=e_CcrgKLyzc - How do you generate electricity using coal - animated video
+	 - https://www.youtube.com/watch?v=eqn0VBVWS50 - How Coal Fired Thermal Power Stations Work
+	 - side products
+	   - Fly ash -> Cement
+	   - sulfur dioxide
+	   - calcium sulfide -> gypsum
+	   - nitrogen oxide
+** Other notes
+   Coal gasification's main benefit seems to be that burning the
+   resulting gas is cleaner than burning coal directly, and that
+   making the gas is easier/cheaper than burning coal and trying to
+   capture all the pollutants. But do Factorio players even care about
+   pollution? We need some other incentive for using gas instead…
+   Maybe simply by providing more efficient machines and means of
+   energy production that depend on gas? But how can we do that and
+   not violate the laws of thermodynamics? A boiler full of coal
+   heating up steam is pretty darn efficient… We can say that dirtier
+   fuels produce energy less efficiently because they fill up machines
+   with soot and ash and whatnot?
+
+   "When coal is used for electricity generation, it is usually
+   pulverized and then burned in a furnace with a boiler.[72] The
+   furnace heat converts boiler water to steam, which is then used to
+   spin turbines which turn generators and create electricity.[73] The
+   thermodynamic efficiency of this process varies between about 25%
+   and 50% depending on the pre-combustion treatment, turbine
+   technology (e.g. supercritical steam generator) and the age of the
+   plant"
+
+   https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/coal-gasification
+
+   Also, we need to separate electricity generation from other uses of
+   energy. A normal furnace that burns stuff doesn't have an
+   efficiency factor. It just takes the MJ of the coal and magically
+   turns it into energy.
+
+** Metal casting
+** Silicon
+*** Links
+	https://www.youtube.com/watch?v=D1ALNg3z2gk
+	https://www.youtube.com/watch?v=AMgQ1-HdElM
+** Similar mods
+   https://forums.factorio.com/viewtopic.php?f=97&t=51868 - Xander Mod
+** Coke
+   https://www.youtube.com/watch?v=ArUbB5KTmj0
+   https://www2.cs.arizona.edu/patterns/weaving/articles/eb11_cltr.pdf
+** Steel
+   https://www.youtube.com/watch?v=9N6uXQ8KRYc
+   https://www.youtube.com/watch?v=9AMbKpeJRoU
+** ...
+   -	1 tree = 4 wood
+   - ~50% of tree can be turned into cellulose
+   - let's say that a tree weighs 2 tons
+
+   Idea: use modules as catalysts, kind of like Py Alien Life does. This would simplify recipes.
