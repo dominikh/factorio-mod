@@ -1,0 +1,28 @@
+digraph {
+	"Water" -> "Boiler"
+	"Boiler" -> "Steam"
+	"Steam" -> "Steam turbine"
+	"Steam turbine" -> "Rotational motion"
+
+	"Gas turbine" -> "Rotational motion" [label="30% efficiency"]
+	"Gas turbine" -> "Heat recovery steam generator" [label="Combined cycle, adds 30% efficiency"]
+	"Water" -> "Heat recovery steam generator"
+	"Heat recovery steam generator" -> "Steam"
+
+	"Diesel engine" -> "Rotational motion"
+
+	"Gasoline engine" -> "Rotational motion"
+
+	"Rotational motion" -> "Electric generator"
+	"Electric generator" -> "Electricity"
+}
+
+
+
+// Sources of mechanical energy include
+// - [x] steam turbines
+// - [x] gas turbines
+// - water turbines
+// - [x] internal combustion engines
+// - wind turbines
+// - even hand cranks
