@@ -119,6 +119,75 @@
    | Nickel cadmium |          50-150 |
    | Li-Ion         |         250-693 |
 
+
+* Game design
+** Quality of materials
+   IRL, many materials come in different qualities that improved over
+   time. For example, different kinds of concrete have existed over
+   time, with newer ones usually being stronger and more durable.
+   Another example is switching from clay bricks to concrete bricks.
+   Yet another example are railway tracks, moving from cast iron to
+   wrought iron and finally to steel.
+
+   While we could theoretically model different qualities of a
+   material as different items, this would pose problems.
+
+   For construction materials like bricks, we would need many recipes
+   for low tier machines: a basic kiln should be able to be built with
+   clay bricks as well as all kinds of concrete bricks. Since Factorio
+   recipes do not allow for "or" inputs, this would indeed require
+   many separate recipes, cluttering the UI.
+
+   For placeable items like railway tracks, we certainly don't want
+   different tiers of tracks in the world, nor do we want to model
+   attributes such as max weight or max speed that rails of a certain
+   kind can support.
+
+   Instead of modeling quality, we can express it in terms of
+   productivity: make producing bricks from modern concrete much more
+   efficient than producing bricks from clay, for example by requiring
+   fewer inputs or less time. This increase has to be significant
+   enough to justify the initial investment of using more complex
+   recipes, while at the same time we must avoid making recipes
+   over-powered.
+
+   Note that some differentiation between qualities still needs to be
+   modelled as different items, to gate progress. For example, some
+   buildings will require steel beams to be built, and it shouldn't be
+   able to substitute steel beams with less efficiently made wrought
+   iron beams.
+
+   Lower tier buildings, however, would be happy with wrought iron. In
+   these cases we might want to offer multiple recipes for the lower
+   tier buildings, so that making older buildings doesn't require
+   keeping older production lines around.
+** Progression
+   In the base game, progression tends to require the previous stages
+   as input. For example, steel is made from iron plates; and if
+   something even better than steel existed, it would most likely
+   contain steel as an ingredient.
+
+   Our mod aims to stick close to reality, which means that this kind
+   of progression is not always possible. For example, pig iron would
+   be turned into cast iron or wrought iron (two lower tier metals),
+   or into steel (a higher tier metal). Making steel would not require
+   cast iron or wrought iron as an input.
+
+   One implication of this is that old production lines may become
+   unnecessary: as the player upgrades to steel, wrought iron
+   production can be torn down. This fact requires special
+   consideration for recipes: a tier 1 machine will nominally require
+   wrought iron, while a tier 2 machine will require steel. However,
+   if the user has upgraded to steel and tore down wrought iron
+   production, they won't be able to build tier 1 machines anymore,
+   even though steel should effectively be a drop-in replacement for
+   wrought iron in old buildings. This has two obvious solutions: 1)
+   have multiple recipes for tier 1 machines 2) design progression in
+   a way that will make it unlikely for the user to desire lower tier
+   buildings when higher tier buildings have become available. More
+   concretely, once steel (and other resources) have become available,
+   there should be no reason to still build lower tier machines.
+
 * Random collection of notes, to be sorted through
 ** Mining
    when mining, we get a mix of ore and rock. there will be a series
