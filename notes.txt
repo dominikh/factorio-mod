@@ -119,6 +119,8 @@
    | Nickel cadmium |          50-150 |
    | Li-Ion         |         250-693 |
 
+   TODO: what about the rate of (dis)charge, though? how does that
+   compare to the real world?
 
 * Game design
 ** Quality of materials
@@ -188,46 +190,24 @@
    concretely, once steel (and other resources) have become available,
    there should be no reason to still build lower tier machines.
 
+
 * Electricity
   - https://www.youtube.com/watch?v=0ftl-WM6wms - Alabama Power's Plant Miller How Electricity Is Generated 3D Animated Tour
   - https://www.youtube.com/watch?v=zcWkEKNvqCA - How a Gas Turbine Works | Gas Power Generation | GE Power
   - https://en.wikipedia.org/wiki/Engine_efficiency
 
+  Power generation in Factorio follows demand perfectly: boilers,
+  steam turbines and even nuclear reactors can start and stop
+  instantly. This is unlike the real world, where there exists a
+  tradeoff between responsiveness and cost. Specifically, there is
+  baseload, intermediate and peaking power generation.
+
 
 * Random collection of notes, to be sorted through
 ** Diesel engines
-   From https://en.wikipedia.org/wiki/Diesel_generator#Fuels:
-
-   Diesel fuel is named after diesel engines, and not vice versa;
-   diesel engines are simply compression-ignition engines, and can
-   operate on a variety of different fuels, depending on configuration
-   and location. Where a gas grid connection is available, gas is
-   often used, as the gas grid will remain pressurized during almost
-   all power cuts. This is implemented by introducing gas with the
-   intake air and using a small amount of diesel fuel for ignition.
-   Conversion to 100% diesel fuel operation can be achieved
-   instantaneously.[9]
-
-   In more rural situations, or for low load factor plant, diesel fuel
-   derived from crude oil is a common fuel; it is less likely to
-   freeze than heavier oils. Endurance will be limited by tank size.
-   Diesel engines can work with the full spectrum of crude oil
-   distillates, from natural gas, alcohols, gasoline, wood gas to the
-   fuel oils from diesel oil to cheaper residual fuels that are like
-   lard at room temperature, and must be heated to enable them to flow
-   down a fuel line.[10]
-
-   Larger engines (from about 3 MWe to 30 MWe) sometimes use heavy
-   oils, essentially tars, derived from the end of the refining
-   process. The slight added complexity of keeping the fuel oil heated
-   to enable it to flow, whilst mitigating the fire risks that come
-   from over-heating fuel, make these fuels unpopular for smaller,
-   often unmanned, generating stations.
-
-   Other possible fuels include: biodiesel, straight vegetable oil,
-   animal fats and tallows, glycerine, and coal-water slurry. These
-   should be used with caution and due to the composistion, normally
-   have a detrimental effect on engine life.
+*** Links
+	- https://onlinelibrary.wiley.com/doi/pdf/10.1002/0471755621.app1 - DIESEL POWER PLANTS
+	- https://en.wikipedia.org/wiki/Diesel_generator#Fuels
 ** Mining
    when mining, we get a mix of ore and rock. there will be a series
    of steps to liberate the ore, increasing the overall yield of
