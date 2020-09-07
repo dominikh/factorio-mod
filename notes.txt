@@ -202,6 +202,15 @@
   tradeoff between responsiveness and cost. Specifically, there is
   baseload, intermediate and peaking power generation.
 
+* Similar mods
+  Other mods that do things similar to us that we may want to take
+  inspiration from.
+
+  - https://forums.factorio.com/viewtopic.php?f=97&t=51868 - Xander Mod
+  - https://mods.factorio.com/user/ElAdamo
+  - https://mods.factorio.com/user/Kingdud
+  - https://mods.factorio.com/mod/RealisticFusionPower
+  - https://mods.factorio.com/mod/SteamCooling
 
 * Random collection of notes, to be sorted through
 ** Diesel engines
@@ -413,8 +422,6 @@
 *** Links
 	https://www.youtube.com/watch?v=D1ALNg3z2gk - The Production Of Silicon | NTNU
 	https://www.youtube.com/watch?v=AMgQ1-HdElM - Silicon Wafer Production
-** Similar mods
-   https://forums.factorio.com/viewtopic.php?f=97&t=51868 - Xander Mod
 ** Coke
    https://www.youtube.com/watch?v=ArUbB5KTmj0 - SunCoke Cokemaking Process 3:00
    https://www2.cs.arizona.edu/patterns/weaving/articles/eb11_cltr.pdf
