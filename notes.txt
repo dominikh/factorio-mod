@@ -351,6 +351,33 @@
   - https://mods.factorio.com/mod/RealisticFusionPower
   - https://mods.factorio.com/mod/SteamCooling
 
+* Battery construction
+** Lead-acid battery
+   - lead grid covered with paste and cured
+   - modern day processes use thin fibre-glass mats to distribute weight
+   - pure lead grids work, but lead-antimony is more rigid. lead-calcium-antimony and lead-selenium-antimony age less
+	 - "lead-calcium grids have 4–6% antimony while lead-selenium grids have 1–2%."
+   - modern paste contains carbon black, barium sulfate and lignosulfonate
+	 - "Sulfonated naphthalene condensate dispersant is a more effective expander than lignosulfonate and speeds up formation"
+	 - "Sulfonated naphthalene requires about one-third to one-half the amount of lignosulfonate"
+   - original paste was lead oxides, sulfuric acid and water
+   - plates are separated
+	 - "In flooded and gel cells, the separators are insulating rails
+	   or studs, formerly of glass or ceramic, and now of plastic. In
+	   AGM cells, the separator is the glass mat itself"
+	 - "Wood, rubber, glass fiber mat, cellulose, and PVC or
+	   polyethylene plastic have been used to make separators. Wood
+	   was the original choice, but it deteriorates in the acid
+	   electrolyte. Rubber separators are stable in battery acid and
+	   provide valuable electrochemical advantages that other
+	   materials cannot"
+   - "there are approximately 8.7 kg (19 lb) of lead in a typical 14.5-kg (32 lb) battery"
+   - dilute sulfuric acid is the electrolyte in a discharged cell
+*** VRLA
+	- gel batteries use silica gel in the electrolyte
+	- AGM batteries use glass fibre mats soaked in electrolyte as the separators and electrolyte
+	- gel batteries provide less surge current
+
 * Random collection of notes, to be sorted through
 ** Diesel engines
 *** Links
