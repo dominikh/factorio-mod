@@ -141,6 +141,8 @@ digraph {
 	"Zinc"                             [label="Zinc\nZn"                                                                                ]
 	"i-butane"                         [label="i-butane\nHC(CH₃)₃"                                                                      ]
 	"n-butane"                         [label="n-butane\nC₄H₁₀"                                                                         ]
+	"Lead(II) oxide" [label="Lead(II) oxide\nPbO"]
+	"Antimony" [label="Antimony\nSb"]
 	
 	// Coal
 	subgraph {
@@ -2142,6 +2144,76 @@ digraph {
 		// "Wood ash" -> "Calcium carbonate" [label="45%"]
 		// "Wood ash" -> "Potash" [label="10%"]
 		// "Wood ash" -> "Phosphate" [label="1%"]
+	}
+
+	// Lead-acid battery
+	subgraph cluster_44 {
+		heat_44_1 [label="heat", shape="rect"]
+		{
+			rank=same
+			make_44_1 [label="make", shape="rect"]
+			make_44_2 [label="make", shape="rect"]
+			make_44_3 [label="make", shape="rect"]
+		}
+		{
+			rank=same
+			mix_44_1  [label="mix", shape="rect"]
+			mix_44_2  [label="mix", shape="rect"]
+		}
+		{
+			rank=same
+			"Lead-acid battery Mk. 1"
+			"Lead-acid battery Mk. 2"
+			"Lead-acid battery Mk. 3"
+		}
+		{
+			rank=same
+			lead_grid_44_1
+			lead_grid_44_2
+		}
+		{
+			rank=same
+			paste_44_1
+			paste_44_2
+		}
+		{
+			rank=same
+			cast_44_1 [label="cast", shape="rect"]
+			cast_44_2 [label="cast", shape="rect"]
+		}
+		
+		// TODO: do we want to model the casing of the battery? or the terminals?
+		// TODO: do we want to model the separators?
+		
+		"Lead" -> make_44_1
+		"Sulfuric acid" -> make_44_1
+		make_44_1 -> "Lead-acid battery Mk. 1"
+
+		"Lead" -> heat_44_1
+		heat_44_1 -> "Lead(II) oxide"
+
+		// The original paste consisted of lead oxides, sulfuric acid and water
+		"Lead(II) oxide" -> mix_44_1
+		"Sulfuric acid" -> mix_44_1
+		mix_44_1 -> paste_44_1
+
+		"Lead" -> cast_44_1
+		cast_44_1 -> lead_grid_44_1
+		lead_grid_44_1 -> make_44_2
+		paste_44_1 -> make_44_2
+		"Sulfuric acid" -> make_44_2
+		make_44_2 -> "Lead-acid battery Mk. 2"
+
+		// TODO: figure out a more complex paste recipe
+		mix_44_2 -> paste_44_2
+		"Lead" -> cast_44_2
+		"Calcium" -> cast_44_2
+		"Antimony" -> cast_44_2
+		cast_44_2 -> lead_grid_44_2
+		lead_grid_44_2 -> make_44_3
+		paste_44_2 -> make_44_3
+		"Sulfuric acid" -> make_44_3
+		make_44_3 -> "Lead-acid battery Mk. 3"
 	}
 }
 

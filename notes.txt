@@ -373,11 +373,14 @@
 	   materials cannot"
    - "there are approximately 8.7 kg (19 lb) of lead in a typical 14.5-kg (32 lb) battery"
    - dilute sulfuric acid is the electrolyte in a discharged cell
+   - there's a "forming" process, which is basically prolonged charging. so our recipe should require ample energy.
 *** VRLA
 	- gel batteries use silica gel in the electrolyte
 	- AGM batteries use glass fibre mats soaked in electrolyte as the separators and electrolyte
 	- gel batteries provide less surge current
 
+*** Sources
+	- https://www.powerstream.com/1922/battery_1922_WITTE/batteryfiles/chapter03.htm
 * Random collection of notes, to be sorted through
 ** Diesel engines
 *** Links
