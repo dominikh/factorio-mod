@@ -2214,6 +2214,10 @@ digraph {
 		paste_44_2 -> make_44_3
 		"Sulfuric acid" -> make_44_3
 		make_44_3 -> "Lead-acid battery Mk. 3"
+
+		// Sources:
+		// https://www.engineersedge.com/battery/antimony_calcium_selenium_tin_alloying.htm
+		// https://www.powerstream.com/1922/battery_1922_WITTE/batteryfiles/chapter03.htm
 	}
 
 	// Antimony
