@@ -305,7 +305,7 @@ digraph {
 		n_5_6 -> "Tier [12] Photovoltaic cell"
 	}
 
-	subgraph  {
+	subgraph {
 		color=grey
 		"Xanthate" [fontcolor=grey, color=grey]
 	}
@@ -785,7 +785,6 @@ digraph {
 
 		// https://www.youtube.com/watch?v=gFEYuaY35Vo - KEMET Ceramic Capacitor Manufacturing
 
-
 		// There are many substrates for PCBs, but most of them are
 		// not sufficiently different. We can focus on FR-2, FR-3 and
 		// FR-4 to model technological progression.
@@ -1068,7 +1067,6 @@ digraph {
 
 		// TODO: there are also the Sulfite process and Soda pulping.
 	}
-
 
 	// Iron
 	subgraph {
@@ -1364,7 +1362,7 @@ digraph {
 		make_26_1 -> "Formaldehyde"
 	}
 
-	subgraph  {
+	subgraph {
 		"Silver"
 	}
 
@@ -1709,7 +1707,7 @@ digraph {
 	}
 
 	// styrene-butadiene rubber
-	{
+	subgraph {
 		n_32_1 [label="...", shape="rect", fillcolor=blue, style=filled]
 
 		// XXX "soap", free-radical initiators
@@ -1719,7 +1717,7 @@ digraph {
 		n_32_1 -> "Styrene-butadiene rubber"
 	}
 
-	{
+	subgraph {
 		n_33_1 [label="...", shape="rect", fillcolor=blue, style=filled]
 
 		"Benzene" -> n_33_1
@@ -1736,7 +1734,7 @@ digraph {
 		// http://www.tc.bci.tu-dortmund.de/Downloads/Praktika/tc30_styrene_english.pdf
 	}
 
-	{
+	subgraph {
 		// https://www.youtube.com/watch?v=FXD9zDs9ygU - How It's Made Clay
 
 		crush_34_1 [label="crush", shape="rect"]
@@ -1754,7 +1752,7 @@ digraph {
 		filter_34_1 -> "Clay powder"
 	}
 
-	{
+	subgraph {
 		or_35_1 [label="OR", shape="diamond"]
 		furnace_35_1 [label="furnace", shape="rect"]
 
@@ -1764,7 +1762,7 @@ digraph {
 		furnace_35_1 -> "Brick"
 	}
 
-	{
+	subgraph {
 		make_36_1 [label="make", shape="rect"]
 		make_36_2 [label="make", shape="rect"]
 
@@ -1814,7 +1812,7 @@ digraph {
 		n_37_1 -> "Ethanol"
 	}
 
-	{
+	subgraph {
 		craft_38_1 [label="craft", shape="parallelogram"]
 		craft_38_2 [label="craft", shape="parallelogram"]
 
@@ -1827,15 +1825,6 @@ digraph {
 
 	// Lead
 	subgraph {
-		// Sources:
-		// - http://sormakmine.com/en/products/102
-		// - https://en.wikipedia.org/wiki/Lead_smelting
-		// - https://en.wikipedia.org/wiki/Lead#Production
-		// - https://www.britannica.com/technology/lead-processing/Mining-and-concentrating
-		// - https://en.wikipedia.org/wiki/Betterton%E2%80%93Kroll_process
-		// - https://www.britannica.com/technology/lead-processing/Refining#ref82082
-		// - https://link.springer.com/content/pdf/10.1007/BF01052570.pdf
-
 		anode_mud_39_1       [label="Anode mud\nContains:\l  Antimony\l  Arsenic\l  Gold\l  Silver\l"]
 		betterton_kroll_39_1 [label="betterton-kroll process", shape="rect"]
 		blast_furnace_39_1   [label="blast furnace", shape="rect"]
@@ -1918,13 +1907,19 @@ digraph {
 		// TODO: possibly recover other metals from the electrolyte
 		// TODO: where does the pure lead cathode come from?
 		// TODO: how much purer is this lead than the lead produced by the betterton-kroll process?
+
+		// Sources:
+		// http://sormakmine.com/en/products/102
+		// https://en.wikipedia.org/wiki/Lead_smelting
+		// https://en.wikipedia.org/wiki/Lead#Production
+		// https://www.britannica.com/technology/lead-processing/Mining-and-concentrating
+		// https://en.wikipedia.org/wiki/Betterton%E2%80%93Kroll_process
+		// https://www.britannica.com/technology/lead-processing/Refining#ref82082
+		// https://link.springer.com/content/pdf/10.1007/BF01052570.pdf
 	}
 
 	// Refining the silver and gold we get from refining lead
 	subgraph {
-		// Sources:
-		// - https://www3.epa.gov/ttn/chief/ap42/ch11/final/c11s25.pdf
-
 		// Note that these processes are specifically for doré, i.e. a
 		// mix of gold and silver. For gold with other impurities,
 		// we'd have more outputs.
@@ -2048,10 +2043,13 @@ digraph {
 		"Silver chloride" -> heat_40_3 [taillabel="(s)"]
 		heat_40_3 -> "Silver" [headlabel="(s)"]
 		heat_40_3 -> "Chlorine" [headlabel="(g)"]
+
+		// Sources:
+		// https://www3.epa.gov/ttn/chief/ap42/ch11/final/c11s25.pdf
 	}
 
 	// Nitrogen dioxide to nitric acid
-	{
+	subgraph {
 		mix_41_1 [label="mix", shape="rect"   ]
 		or_41_1  [label="OR",  shape="diamond"]
 
@@ -2119,10 +2117,7 @@ digraph {
 	}
 
 	// Wood ash / pot ash
-	{
-		// Sources:
-		// - https://cavemanchemistry.com/oldcave/projects/potash/
-
+	subgraph {
 		burn_43_1 [label="burn", shape="rect"]
 		dissolve_43_1 [label="dissolve", shape="rect"]
 		insoluble_43_1 [label="Insolubles\nContains:\l  Silica\l  Calcium carbonate\l"]
@@ -2146,6 +2141,9 @@ digraph {
 		// "Wood ash" -> "Calcium carbonate" [label="45%"]
 		// "Wood ash" -> "Potash" [label="10%"]
 		// "Wood ash" -> "Phosphate" [label="1%"]
+
+		// Sources:
+		// https://cavemanchemistry.com/oldcave/projects/potash/
 	}
 
 	// Lead-acid battery
@@ -2219,7 +2217,7 @@ digraph {
 	}
 
 	// Antimony
-	{
+	subgraph {
 		// TODO: "Alloys of lead and tin with antimony have improved properties for solders, bullets, and plain bearings"
 		crushing_45_1 [shape="rect"]
 		crushing_45_2 [shape="rect"]
