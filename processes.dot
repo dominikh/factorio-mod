@@ -157,7 +157,7 @@ digraph {
 		n_20_2 [label="...", shape="rect", fillcolor=blue, style=filled]
 		n_20_3 [label="...", shape="rect", fillcolor=blue, style=filled]
 		n_20_4 [label="...", shape="rect", fillcolor=blue, style=filled]
-		
+
 		// "Metallurgical coal is needed to make coke because it
 		// contains more carbon and less moisture than the thermal
 		// coals used in power plants."
@@ -171,10 +171,10 @@ digraph {
 		n_20_2 -> "Bituminous coal"
 		n_20_3 -> "Subbituminous coal"
 		n_20_4 -> "Lignite"
-		
+
 		"Lignite" -> coking_20_1 [label="Produces shitty coke, but more coal tar"]
 		"Subbituminous coal" -> coking_20_1 [label="Produces shitty coke, but more coal tar"]
-		
+
 		// Anthracite lacks the pores to make good coke, and coal
 		// other than bituminous is too impure. Technically, only some
 		// bituminous coal is usable for making coke, but I'm not sure
@@ -207,7 +207,7 @@ digraph {
 		"Creosote oil" -> "Heavy oils"
 
 		fractional_distillation_20_1 -> "Anthracene" [label="fourth fraction"]
-		
+
 		fractional_distillation_20_1 -> "Pitch"
 		coking_20_1 -> "Sulfur"
 		coking_20_1 -> "Crude coal gas"
@@ -235,9 +235,8 @@ digraph {
 		// Bituminous coal 24-35 MJ/kg
 		// Anthracite 26-33 MJ/kg
 		// Lignite 10-20 MJ/kg
-		
 	}
-	
+
 	subgraph {
 		// "10-12 MWh per ton of silicon"
 		// 3 carbon electrodes that are gradually consumed
@@ -262,7 +261,7 @@ digraph {
 		"Coke" -> furnace_5_1
 		furnace_5_1 -> "Metallurgical grade silicon"
 		furnace_5_1 -> "Carbon monoxide"
-		
+
 		"Metallurgical grade silicon" -> mix_5_1
 		"Hydrogen chloride (300 C)" -> mix_5_1
 		mix_5_1 -> "Hydrogen"
@@ -285,7 +284,7 @@ digraph {
 		or_5_1 -> n_5_5
 		n_5_1 -> "(Mono|Poly)crystalline (p-type|n-type)? silicon ingot"
 		n_5_5 -> "(Mono|Poly)crystalline (p-type|n-type)? silicon ingot"
-		
+
 		"Steel" -> n_5_3
 		"Diamond" -> n_5_3
 		n_5_3 -> "Steel wire with diamond splinters"
@@ -318,7 +317,7 @@ digraph {
 		lime_kiln_10_1      [label="lime kiln", shape="rect"]
 		mix_10_1            [label="mix", shape="rect"]
 		mix_10_2            [label="mix", shape="rect"]
-		
+
 		"Marble" -> "Limestone"
 		"Chalk" -> "Limestone"
 		"Limestone" -> "Calcium carbonate"
@@ -351,7 +350,7 @@ digraph {
 
 	subgraph {
 		// TODO: wet sulfuric acid process
-		
+
 		combustion_14_1 [label="combustion", shape="rect"]
 		n_14_2 [label="...", shape="rect", fillcolor=blue, style=filled]
 		n_14_3 [label="...", shape="rect", fillcolor=blue, style=filled]
@@ -364,7 +363,7 @@ digraph {
 		// TODO: exothermic process, heat can be recovered
 		"Sulfur" -> combustion_14_1
 		combustion_14_1 -> "Sulfur dioxide"
-		
+
 		// Contact process
 		{
 			// "Platinum was initially used as the catalyst for this
@@ -375,7 +374,7 @@ digraph {
 			"Platinum" -> or_14_1
 			or_14_1 -> make_14_1
 			make_14_1 -> "Module: Contact process catalyst"
-			
+
 			"Sulfur dioxide" -> n_14_2
 			"Sulfuric acid" -> n_14_2
 			"Ferric hydroxide" -> n_14_2
@@ -405,11 +404,11 @@ digraph {
 		}
 	}
 
-	subgraph {		
+	subgraph {
 		copper_15_1            [label="Copper"]
 		electrodeposition_15_1 [label="electrodeposition", shape="rect"]
 		or_15_1                [label="OR", shape="diamond"]
-		
+
 		copper_15_1 -> electrodeposition_15_1
 		electrodeposition_15_1 -> "Copper starter sheet"
 		"Copper starter sheet" -> or_15_1
@@ -433,7 +432,7 @@ digraph {
 			tank_leaching_0_2             [label="tank leaching", shape="rect"]
 			ultrafine_froth_flotation_0_1 [label="Ultrafine froth flotation", shape="rect"]
 			ultrafine_froth_flotation_0_2 [label="Ultrafine froth flotation", shape="rect"]
-			
+
 			Tailings_0_1  [label="Tailings\nParticle size: ultrafine, normal, coarse\lContains\l  ~50% of the copper sulfide,\l  copper oxides,\l  galena,\l  sphalerite\l"]
 			Tailings_0_2  [label="Tailings\nParticle size: ultrafine\lContains\l  ~25% of the copper sulfide,\l  copper oxides,\l  galena,\l  sphalerite\l"]
 			Tailings_0_7  [label="Tailings\nParticle size: normal\lContains\l  copper oxides,\l  galena,\l  sphalerite\l"]
@@ -451,7 +450,7 @@ digraph {
 
 			copper_sulfide_concentrate_0_1 [label="Copper sulfide concentrate\nImpurities:\l  Other sulfides\l", color=green]
 
-			
+
 			"Copper sulfide ore" -> primary_crushing_0_1
 			primary_crushing_0_1 -> "Crushed copper sulfide ore"
 			"Crushed copper sulfide ore" -> secondary_crushing_0_1
@@ -470,7 +469,7 @@ digraph {
 
 		{
 			edge [color=blue]
-			
+
 			Tailings_0_1 -> size_filtering_0_1
 			size_filtering_0_1 -> Tailings_0_2
 			size_filtering_0_1 -> Tailings_0_3
@@ -478,7 +477,7 @@ digraph {
 			Tailings_0_2 -> ultrafine_froth_flotation_0_1
 			ultrafine_froth_flotation_0_1 -> copper_sulfide_concentrate_0_1
 			ultrafine_froth_flotation_0_1 -> Tailings_0_5
-			
+
 			Tailings_0_3 -> coarse_froth_flotation_0_1
 			coarse_froth_flotation_0_1 -> copper_sulfide_concentrate_0_1
 			coarse_froth_flotation_0_1 -> Tailings_0_4
@@ -490,10 +489,10 @@ digraph {
 				combine_0_1 -> Tailings_0_14
 			}
 
-			
+
 			{
 				edge [color=red]
-				
+
 				Tailings_0_14 -> tank_leaching_0_2
 				tank_leaching_0_2 -> Tailings_0_15
 			}
@@ -501,13 +500,13 @@ digraph {
 
 		{
 			edge [color=red]
-			
+
 			Tailings_0_1 -> tank_leaching_0_1
 			tank_leaching_0_1 -> Tailings_0_8
 
 			{
 				edge [color=blue]
-				
+
 				Tailings_0_8 -> size_filtering_0_2
 				size_filtering_0_2 -> Tailings_0_9
 				size_filtering_0_2 -> Tailings_0_10
@@ -515,11 +514,11 @@ digraph {
 				Tailings_0_9 -> ultrafine_froth_flotation_0_2
 				ultrafine_froth_flotation_0_2 -> copper_sulfide_concentrate_0_1
 				ultrafine_froth_flotation_0_2 -> Tailings_0_12
-				
+
 				Tailings_0_10 -> coarse_froth_flotation_0_2
 				coarse_froth_flotation_0_2 -> copper_sulfide_concentrate_0_1
 				coarse_froth_flotation_0_2 -> Tailings_0_13
-				
+
 				{
 					Tailings_0_11 -> combine_0_2
 					Tailings_0_12 -> combine_0_2
@@ -563,7 +562,7 @@ digraph {
 		partial_roasting_1_1      [label="partial roasting", shape="rect"]
 		reverberatory_furnace_1_1 [label="reverberatory furnace", shape="rect"]
 		slag_1_1                  [label="Slag\nContains:\l  FeO.SiO₂\l  Copper oxide\l  Copper sulfide\l  Droplets of matte\l"]
-		
+
 		copper_sulfide_concentrate_0_1 -> partial_roasting_1_1
 		partial_roasting_1_1 -> "Copper calcine"
 		partial_roasting_1_1 -> "Sulfur dioxide"
@@ -611,7 +610,7 @@ digraph {
 		solvent_extraction_12_1 [label="solvent extraction", shape="rect"]
 		or_12_1 [label="OR", shape="diamond"]
 
-		
+
 		"Copper oxide ore" -> primary_crushing_12_1
 		primary_crushing_12_1 -> "Crushed copper oxide ore"
 		"Crushed copper oxide ore" -> agglomeration_12_1
@@ -676,7 +675,7 @@ digraph {
 		// TODO: "https://en.wikipedia.org/wiki/Inductor#Types"
 
 		// https://link.springer.com/chapter/10.1007/978-3-319-48933-9_29
-		
+
 		n_13_1 [label="...", fillcolor=blue, style=filled]
 		n_13_2 [label="...", fillcolor=blue, style=filled]
 		n_13_3 [label="...", fillcolor=blue, style=filled]
@@ -690,7 +689,7 @@ digraph {
 		or_13_3 [label="OR", shape="diamond"]
 		solvent_13_1 [label="Solvent"]
 		binder_13_1 [label="Binder"]
-		
+
 		"Copper" -> n_13_1
 		n_13_1 -> "Leads"
 
@@ -714,12 +713,12 @@ digraph {
 		// the final substrate. The surface finish can be improved by
 		// coating the surface with a thin, glassy layer (glazing),
 		// which is done as an additional step at a lower temperature.
-		
+
 		// Resistors
 		{
 			// https://www.youtube.com/watch?v=wshRwO0MCSU - YAGEO Chip Resistors manufacturing process
 			// https://threerollmill.com/documents/thick_film_paste.pdf
-			
+
 			"Leads" -> n_13_2
 			"Carbon" -> n_13_2
 			"Alumina ceramic" -> n_13_2
@@ -735,11 +734,11 @@ digraph {
 			"Alumina ceramic" -> n_13_4
 			n_13_4 -> "Thin film resistor"
 
-			
+
 			// Substrate
 			"Alumina ceramic" -> n_13_5
 			n_13_5 -> "Substrate"
-			
+
 			"Kerosene" -> or_13_2
 			"Mineral spirits" -> or_13_2
 			"Dibutyl phthalate" -> or_13_2
@@ -775,7 +774,7 @@ digraph {
 			"Resistive paste" -> n_13_8
 			"Substrate" -> n_13_8
 			n_13_8 -> "Thick film resistor"
-			
+
 
 			// "The most widely used thin-film cermet resistors are
 			// compositions of silicon monoxide and chromium (SiO-Cr)
@@ -785,7 +784,7 @@ digraph {
 		}
 
 		// https://www.youtube.com/watch?v=gFEYuaY35Vo - KEMET Ceramic Capacitor Manufacturing
-		
+
 
 		// There are many substrates for PCBs, but most of them are
 		// not sufficiently different. We can focus on FR-2, FR-3 and
@@ -873,7 +872,7 @@ digraph {
 		"Sulfur" -> mix_17_1
 		mix_17_1 -> "Black powder"
 
-		
+
 		"Wood" -> furnace_17_1
 		fuel_17_1 -> furnace_17_1
 		furnace_17_1 -> "Pyroligneous acid"
@@ -920,27 +919,27 @@ digraph {
 		or_17_2 -> "T1 Cartridge"
 		or_17_2 -> "T2 Cartridge"
 		or_17_2 -> "T3 Cartridge"
-		
+
 		"Mercury" -> mix_17_5
 		"Nitric acid" -> mix_17_5
 		"Ethanol" -> mix_17_5
 		mix_17_5 -> "Mercury fulminate"
 		"Mercury fulminate" -> machine_17_5
 		machine_17_5 -> "T1 Primer"
-		
+
 		"Sylvite" -> "Potassium chloride"
 		"Carnallite" -> "Potassium chloride"
 		"Potash" -> "Potassium chloride"
-		
+
 		"Chlorine" -> liebig_17_1
 		"Calcium hydroxide" -> liebig_17_1
 		"Potassium chloride" -> liebig_17_1
 		liebig_17_1 -> "Potassium chlorate"
-		
+
 		"Mercury fulminate" -> machine_17_6
 		"Potassium chlorate" -> machine_17_6
 		machine_17_6 -> "T2 Primer"
-		
+
 		"Potassium chlorate" -> machine_17_7
 		"Lead(II) thiocyanate" -> machine_17_7
 		"Antimony trisulfide" -> machine_17_7
@@ -1024,7 +1023,7 @@ digraph {
 			recovery_boiler_19_1_1            [label="recovery boiler", shape="rect"]
 			slaker_19_1_1                     [label="slaker", shape="rect"]
 
-			
+
 			"Wood chips" -> preheat_19_1_1
 			"Steam" -> preheat_19_1_1
 			preheat_19_1_1 -> "Preheated wood chips"
@@ -1074,7 +1073,7 @@ digraph {
 	// Iron
 	subgraph {
 		// TODO: add slag and flue gases
-		
+
 		// Direct reduced iron processes for steelmaking exist, but
 		// might not fit into our mod.
 
@@ -1143,7 +1142,7 @@ digraph {
 		{rank=same; "Iron ore fines"; "Iron ore lumps"; "Crushed iron ore";}
 		{rank=same; blast_furnace_21_1; blast_furnace_21_2; blast_furnace_21_3; hisarna_21_1;}
 		{rank=same; n_21_1; n_21_2; n_21_3;}
-		
+
 		"Direct shipping iron ore" -> crushing_21_2
 		crushing_21_2 -> "Iron ore fines"
 		crushing_21_2 -> "Iron ore lumps"
@@ -1176,15 +1175,15 @@ digraph {
 		// worth feeding back into the bloomery. We choose to avoid
 		// that complexity.
 
-		
+
 		"Iron ore fines" -> sintering_21_1
 		"Calcium carbonate" -> sintering_21_1
 		"Coke breeze" -> sintering_21_1
 		"Clay" -> sintering_21_1
 		sintering_21_1 -> "Iron sinter"
-		
+
 		// Blast furnaces, making pig iron
-		// 
+		//
 		// Note that the blast furnace and finery must use charcoal
 		// (or some other clean source of energy we won't have yet),
 		// and cannot use coal or coke. Coal contains too much sulfur,
@@ -1220,7 +1219,7 @@ digraph {
 		"Magnetite ore fines" -> magnetic_separation_21_1
 		magnetic_separation_21_1 -> "Magnetite concentrate"
 		"Magnetite concentrate" -> "Iron ore fines"
-		
+
 		// Fineries, turning pig iron into wrought iron
 		"Pig iron" -> finery_21_1
 		"Charcoal" -> finery_21_1
@@ -1276,7 +1275,7 @@ digraph {
 		"Pig iron" -> bessemer_21_1
 		"Clay" -> bessemer_21_1
 		bessemer_21_1 -> "Bessemer steel"
-		
+
 		// Basic oxygen steelmaking, turning pig iron into steel
 		"Pig iron" -> bos_21_1
 		"Oxygen" -> bos_21_1
@@ -1290,7 +1289,7 @@ digraph {
 		"Oxygen" -> hisarna_21_1
 		"Calcium carbonate" -> hisarna_21_1
 		hisarna_21_1 -> "Pig iron"
-		
+
 		"Shear steel" -> "Steel"
 		"Crucible steel" -> "Steel"
 		"Bessemer steel" -> "Steel"
@@ -1315,7 +1314,7 @@ digraph {
 		air_22_1 [label="Air (as a source of nitrogen)"]
 		make_22_1 [label="make", shape="rect"]
 		reduction_22_1 [label="reduction", shape="rect"]
-		
+
 		"Ammonia" -> ostwald_22_1
 		"Oxygen" -> ostwald_22_1
 		"Platinum" -> ostwald_22_1
@@ -1332,7 +1331,7 @@ digraph {
 		// happening… That's why we're not including it at all.
 		haber_22_1 -> "Ammonia"
 
-		// We somewhat simplify the creation of the catalyst, by not first reducing magnetite, making wüstite.		
+		// We somewhat simplify the creation of the catalyst, by not first reducing magnetite, making wüstite.
 		"Magnetite concentrate" -> make_22_1
 		"Aluminium oxide" -> make_22_1
 		"Calcium oxide" -> make_22_1
@@ -1342,7 +1341,7 @@ digraph {
 		catalyst_precursor_22_1 -> reduction_22_1
 		"Hydrogen" -> reduction_22_1
 		reduction_22_1 -> "Module: Haber process catalyst"
-		
+
 		// The development of hydrogen-resistant chromium-molybdenum
 		// steels made it possible to construct single-walled pipes
 	}
@@ -1354,7 +1353,7 @@ digraph {
 
 	subgraph {
 		make_26_1 [label="make", shape="rect"]
-		
+
 		"Methanol" -> make_26_1
 		// Using a catalyst based on iron and molybdenum is more
 		// common nowadays, as it is more economical. Unfortunately,
@@ -1371,17 +1370,17 @@ digraph {
 
 	subgraph {
 		// https://www.youtube.com/watch?v=wPox7MUbvqs
-		
+
 		or_28_1 [label="OR", shape="diamond"]
 		and_28_1 [label="AND", shape="diamond"]
 		n_28_1 [label="...", shape="rect", fillcolor=blue, style=filled]
 		mix_28_1 [label="...", shape="rect", fillcolor=blue, style=filled]
-		
+
 		"Carbon monoxide" -> and_28_1
 		"Hydrogen" -> and_28_1
 		and_28_1 -> or_28_1
 		"Syngas" -> or_28_1
-		
+
 		or_28_1 -> mix_28_1
 		"Copper" -> mix_28_1
 		"Zinc oxide" -> mix_28_1
@@ -1402,7 +1401,7 @@ digraph {
 		"Chemical manganese dioxide" -> or_29_1
 		"Electrolytic manganese dioxide" -> or_29_1
 		or_29_1 -> n_29_1 [label="2"]
-		
+
 		"Potassium hydroxide" -> n_29_1 [label="4"]
 		"Oxygen" -> n_29_1 [label="1", color=grey]
 		n_29_1 -> "Potassium manganate" [label="2"]
@@ -1419,7 +1418,7 @@ digraph {
 		n_30_2 [label="...", shape="rect", fillcolor=blue, style=filled]
 		electrolysis_30_1 [label="electrolysis", shape="rect"]
 		or_30_1 [label="OR", shape="diamond"]
-		
+
 		"Pyrolusite" -> "Manganese dioxide"
 		"Manganese dioxide" -> n_30_1
 		"Dinitrogen tetroxide" -> n_30_1
@@ -1442,7 +1441,7 @@ digraph {
 	// Petroleum
 	subgraph {
 		// Crude oil
-		
+
 		// Acrylic acid
 		// Alkenes (olefins)
 		// Aromatic petrochemicals
@@ -1535,7 +1534,7 @@ digraph {
 			"Fraction: Light naphtha"
 			"Fraction: Gas"
 		}
-		
+
 		"Crude oil" -> desalting_31_1
 		desalting_31_1 -> "Desalted crude oil"
 
@@ -1572,7 +1571,7 @@ digraph {
 		// TODO: do we want to make cracking more complicated by
 		// modeling the processes for separating the resulting
 		// chemicals?
-		
+
 		// https://www.essentialchemicalindustry.org/processes/cracking-isomerisation-and-reforming.html
 		// has a seemingly useful table showing the ratios of
 		// outputs depending on inputs… Except it doesn't make
@@ -1603,7 +1602,7 @@ digraph {
 		steam_cracking_31_4 -> "RPG"	   [label="19-29%"]
 		steam_cracking_31_4 -> "Fuel oil"  [label="4%"]
 		steam_cracking_31_4 -> "Hydrogen sulfide"
-		
+
 		// https://www.open.edu/openlearn/science-maths-technology/science/chemistry/introduction-polymers/content-section-3.2.2
 		// specifies that 50% of ethane turns into ethylene, 10%
 		// turns into methane and hydrogen, and the rest remains
@@ -1615,7 +1614,7 @@ digraph {
 		steam_cracking_31_2 -> "Hydrogen"  [label="8%"]
 		steam_cracking_31_2 -> "Methane"   [label="8%"]
 		steam_cracking_31_2 -> "Ethylene"  [label="84%"]
-		
+
 		"Propane" -> steam_cracking_31_3
 		"Steam" -> steam_cracking_31_3
 		steam_cracking_31_3 -> "Hydrogen"  [label="2%"]
@@ -1696,7 +1695,7 @@ digraph {
 		gas_separator_31_1 -> "Hydrogen sulfide"
 		gas_separator_31_1 -> "Propane"
 		gas_separator_31_1 -> "Butane"
-		
+
 		sour_gas_31_1 -> gas_separator_31_2
 		gas_separator_31_2 -> "Methane"
 		gas_separator_31_2 -> "Ethane"
@@ -1722,7 +1721,7 @@ digraph {
 
 	{
 		n_33_1 [label="...", shape="rect", fillcolor=blue, style=filled]
-		
+
 		"Benzene" -> n_33_1
 		"Ethylene" -> n_33_1
 		n_33_1 -> "Ethylbenzene"
@@ -1744,7 +1743,7 @@ digraph {
 		furnace_34_1 [label="dry", shape="rect"]
 		mill_34_1 [label="mill", shape="rect"]
 		filter_34_1 [label="filter", shape="rect"]
-		
+
 		"Raw clay" -> crush_34_1
 		crush_34_1 -> "Crushed clay"
 		"Crushed clay" -> furnace_34_1
@@ -1758,7 +1757,7 @@ digraph {
 	{
 		or_35_1 [label="OR", shape="diamond"]
 		furnace_35_1 [label="furnace", shape="rect"]
-		
+
 		"Raw clay" -> or_35_1
 		"Clay powder" -> or_35_1
 		or_35_1 -> furnace_35_1
@@ -1768,7 +1767,7 @@ digraph {
 	{
 		make_36_1 [label="make", shape="rect"]
 		make_36_2 [label="make", shape="rect"]
-		
+
 		"Wood" -> make_36_1
 		make_36_1 -> "Wood board"
 
@@ -1786,12 +1785,12 @@ digraph {
 
 		n_37_1 [label="...", shape="rect", fillcolor=blue, style=filled]
 		or_37_1 [label="OR", shape="diamond"]
-		
+
 		"Sugarcane" -> sugarcane_mill_37_1
 		sugarcane_mill_37_1 -> "Sugarcane juice"
 		// TODO: uses for bagasse, see https://en.wikipedia.org/wiki/Bagasse
 		sugarcane_mill_37_1 -> "Bagasse"
-		
+
 		"Sugarcane juice" -> juice_clarification_37_1
 		"Calcium hydroxide" -> juice_clarification_37_1
 		juice_clarification_37_1 -> "Clarified sugarcane juice"
@@ -1818,7 +1817,7 @@ digraph {
 	{
 		craft_38_1 [label="craft", shape="parallelogram"]
 		craft_38_2 [label="craft", shape="parallelogram"]
-		
+
 		"Brick" -> craft_38_1
 		craft_38_1 -> "Stone pipe"
 
@@ -1873,7 +1872,7 @@ digraph {
 		// TODO: does it have to be coke?
 		"Coke" -> blast_furnace_39_1
 		blast_furnace_39_1 -> "Lead bullion" [headlabel="(l)"]
-		
+
 		"Lead bullion" -> drossing_39_1 [taillabel="(l)"]
 		drossing_39_1 -> dross_39_1
 		drossing_39_1 -> "Drossed lead bullion" [headlabel="(l)"]
@@ -1883,7 +1882,7 @@ digraph {
 		"Sulfur" -> softening_39_1
 		softening_39_1 -> slag_39_1
 		softening_39_1 -> "Softened lead bullion" [headlabel="(l)"]
-		
+
 		// Parkes process
 		"Softened lead bullion" -> parkes_39_1 [taillabel="(l)"]
 		// "Less than 1 percent by weight" zinc
@@ -1893,7 +1892,7 @@ digraph {
 		// The zinc is recovered
 		parkes_39_1 -> "Zinc"
 		// TODO: recover gold and silver
-		
+
 		// Betterton-Kroll process
 		"Calcium" -> betterton_kroll_39_1
 		"Magnesium" -> betterton_kroll_39_1
@@ -1925,7 +1924,7 @@ digraph {
 	subgraph {
 		// Sources:
 		// - https://www3.epa.gov/ttn/chief/ap42/ch11/final/c11s25.pdf
-		
+
 		// Note that these processes are specifically for doré, i.e. a
 		// mix of gold and silver. For gold with other impurities,
 		// we'd have more outputs.
@@ -1934,7 +1933,7 @@ digraph {
 		// outputting it as solid gold, to simplify recipes.
 
 		// TODO: a lot of these processes should output gas
-		
+
 		acid_parting_40_1 [label="acid parting",     shape="rect"   ]
 		blow_40_1         [label="miller process",   shape="rect"   ]
 		furnace_40_1      [label="furnace",          shape="rect"   ]
@@ -1952,7 +1951,7 @@ digraph {
 		or_40_1           [label="OR",               shape="diamond"]
 		or_40_2           [label="OR",               shape="diamond"]
 		smash_40_1        [label="smash",            shape="rect"   ]
-		
+
 		// Salt cementation
 		"Doré" -> heat_40_1 [taillabel="(s)"]
 		"Sodium chloride" -> heat_40_1
@@ -2025,7 +2024,7 @@ digraph {
 		"Silver nitrate" -> heat_40_4
 		heat_40_4 -> "Silver" [headlabel="(s)"]
 		heat_40_4 -> "Nitrogen dioxide" [headlabel="(g)"]
-		
+
 		"Silver nitrate" -> mix_40_3 [taillabel="(aq)"]
 		"Hydrochloric acid" -> mix_40_3 [taillabel="(aq)"]
 		mix_40_3 -> "Silver chloride" [headlabel="(s)"]
@@ -2055,7 +2054,7 @@ digraph {
 	{
 		mix_41_1 [label="mix", shape="rect"   ]
 		or_41_1  [label="OR",  shape="diamond"]
-		
+
 		"Nitrogen dioxide" -> mix_41_1
 		"Water" -> or_41_1
 		"Hydrogen peroxide" -> or_41_1
@@ -2072,7 +2071,7 @@ digraph {
 		mix_42_2  [label="mix",  shape="rect"]
 		mix_42_3  [label="mix",  shape="rect"]
 		mix_42_4  [label="mix",  shape="rect"]
-		
+
 		"Potassium nitrate" -> heat_42_1 [taillabel="(s)"]
 		"Potassium" -> heat_42_1 [taillabel="(s)"]
 		heat_42_1 -> "Potassium oxide" [headlabel="(s)"]
@@ -2085,11 +2084,11 @@ digraph {
 		heat_42_2 -> "Potassium oxide" [headlabel="(s)"]
 		heat_42_2 -> "Potassium peroxide" [headlabel="(s)"]
 		heat_42_2 -> "Potassium superoxide" [headlabel="(s)"]
-		
+
 		"Potassium peroxide" -> heat_42_3 [taillabel="(s)"]
 		heat_42_3 -> "Potassium oxide" [headlabel="(s)"]
 		heat_42_3 -> "Oxygen" [headlabel="(g)"]
-		
+
 		"Potassium hydroxide" -> mix_42_1 [taillabel="(s)"]
 		"Potassium" -> mix_42_1 [taillabel="(l)"]
 		mix_42_1 -> "Potassium oxide" [headlabel="(s)"]
@@ -2133,7 +2132,7 @@ digraph {
 
 		"Wood" -> burn_43_1
 		burn_43_1 -> "Wood ash"
-		
+
 		"Water" -> dissolve_43_1 [taillabel="(l)"]
 		"Wood ash" -> dissolve_43_1 [taillabel="(s)"]
 		dissolve_43_1 -> insoluble_43_1 [headlabel="(s)"]
@@ -2142,8 +2141,8 @@ digraph {
 		do_precipitate_43_1 -> precipitate_43_1 [headlabel="(s)"]
 		do_precipitate_43_1 -> "Sodium carbonate" [headlabel="(s)"]
 		do_precipitate_43_1 -> "Potassium carbonate" [headlabel="(s)"]
-	
-	
+
+
 		// "Wood ash" -> "Calcium carbonate" [label="45%"]
 		// "Wood ash" -> "Potash" [label="10%"]
 		// "Wood ash" -> "Phosphate" [label="1%"]
@@ -2184,10 +2183,10 @@ digraph {
 			cast_44_1 [label="cast", shape="rect"]
 			cast_44_2 [label="cast", shape="rect"]
 		}
-		
+
 		// TODO: do we want to model the casing of the battery? or the terminals?
 		// TODO: do we want to model the separators?
-		
+
 		"Lead" -> make_44_1
 		"Sulfuric acid" -> make_44_1
 		make_44_1 -> "Lead-acid battery Mk. 1"
