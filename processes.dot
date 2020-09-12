@@ -7,6 +7,7 @@ digraph {
 	"Anhydrite"                        [                                                  fillcolor=brown, style=filled                 ]
 	"Anthracite ore"                   [                                                  fillcolor=brown, style=filled                 ]
 	"Antimony trisulfide"              [label="Antimony trisulfide\nSb₂S₃"                                                              ]
+	"Antimony"                         [label="Antimony\nSb"                                                                            ]
 	"Barium nitrate"                   [label="Barium nitrate\nBa(NO₃)₂"                                                                ]
 	"Basic kiln"                       [                                                  fillcolor=pink,  style=filled, shape="house"  ]
 	"Benzene"                          [label="Benzene\nC₆H₆"                                                                           ]
@@ -32,6 +33,7 @@ digraph {
 	"Clay"                             [                                                                                                ]
 	"Copper nitrate"                   [label="Copper nitrate\nCu(NO₃)₂"                                                                ]
 	"Copper oxide ore"                 [                                                  fillcolor=brown, style=filled                 ]
+	"Copper sulfate"                   [label="Copper sulfate\nCuSO₄"                                                                   ]
 	"Copper sulfide ore"               [                                                  fillcolor=brown, style=filled                 ]
 	"Copper"                           [label="Copper\nCu"                                                                              ]
 	"Crude oil"                        [                                                  fillcolor=brown, style=filled                 ]
@@ -58,6 +60,7 @@ digraph {
 	"Lead fluorosilicate"              [label="Lead fluorosilicate\nPbSiF₆"                                                             ]
 	"Lead styphnate"                   [label="Lead styphnate\nC₆HN₃O₈Pb"                                                               ]
 	"Lead"                             [label="Lead\nPb"                                                                                ]
+	"Lead(II) oxide"                   [label="Lead(II) oxide\nPbO"                                                                     ]
 	"Lead(II) thiocyanate"             [label="Lead(II) thiocyanate\nPb(SCN)₂"                                                          ]
 	"Lignite ore"                      [                                                  fillcolor=brown, style=filled                 ]
 	"Limestone"                        [                                                  fillcolor=brown, style=filled                 ]
@@ -113,6 +116,7 @@ digraph {
 	"Silver oxide"                     [label="Silver oxide\nAg₂O"                                                                      ]
 	"Silver sulfide"                   [label="Silver sulfide\nAg₂S"                                                                    ]
 	"Silver"                           [label="Silver\nAg"                                                                              ]
+	"Sodium arsenite"                  [label="Sodium arsenite\nNaAsO₂"                                                                 ]
 	"Sodium carbonate"                 [label="Sodium carbonate\nNa₂CO₃"                                                                ]
 	"Sodium chloride"                  [label="Sodium chloride\nNaCl"                                                                   ]
 	"Sodium hydroxide"                 [label="Sodium hydroxide\nNaOH"                                                                  ]
@@ -121,6 +125,7 @@ digraph {
 	"Sodium sulfide"                   [label="Sodium sulfide\nNa₂S"                                                                     ]
 	"Sodium sulfite"                   [label="Sodium sulfite\nNa₂SO₃"                                                                  ]
 	"Steam"                            [                                                  fillcolor=brown, style=filled                 ]
+	"Stibnite ore"                     [                                                  fillcolor=brown, style=filled                 ]
 	"Stone pipe"                       [                                                  fillcolor=pink,  style=filled, shape="house"  ]
 	"Styrene"                          [label="Styrene\nC₆H₅CH=CH₂"                                                                     ]
 	"Subbituminous coal ore"           [                                                  fillcolor=brown, style=filled                 ]
@@ -141,9 +146,7 @@ digraph {
 	"Zinc"                             [label="Zinc\nZn"                                                                                ]
 	"i-butane"                         [label="i-butane\nHC(CH₃)₃"                                                                      ]
 	"n-butane"                         [label="n-butane\nC₄H₁₀"                                                                         ]
-	"Lead(II) oxide" [label="Lead(II) oxide\nPbO"]
-	"Antimony" [label="Antimony\nSb"]
-	
+
 	// Coal
 	subgraph {
 		coking_20_1 [label="coking", shape="rect"]
@@ -2147,7 +2150,7 @@ digraph {
 	}
 
 	// Lead-acid battery
-	subgraph cluster_44 {
+	subgraph {
 		heat_44_1 [label="heat", shape="rect"]
 		{
 			rank=same
@@ -2214,6 +2217,103 @@ digraph {
 		paste_44_2 -> make_44_3
 		"Sulfuric acid" -> make_44_3
 		make_44_3 -> "Lead-acid battery Mk. 3"
+	}
+
+	// Antimony
+	{
+		// TODO: "Alloys of lead and tin with antimony have improved properties for solders, bullets, and plain bearings"
+		crushing_45_1 [shape="rect"]
+		crushing_45_2 [shape="rect"]
+		froth_flotation_45_1 [shape="rect"]
+		grinding_45_1 [shape="rect"]
+		heavy_media_separation_45_1 [shape="rect"]
+		oxide_reduction_45_1 [shape="rect"]
+		washing_45_1 [shape="rect"]
+
+		{
+			// Process for pure stibnite ore
+
+			or_45_1 [label="OR", shape="diamond"]
+
+			"Stibnite ore" -> crushing_45_1
+			crushing_45_1 -> "Coarse crushed stibnite ore"
+			crushing_45_1 -> "Fine crushed stibnite ore"
+			"Coarse crushed stibnite ore" -> washing_45_1
+			"Fine crushed stibnite ore" -> or_45_1
+			washing_45_1 -> "Washed coarse crushed stibnite ore"
+			"Washed coarse crushed stibnite ore" -> heavy_media_separation_45_1
+			heavy_media_separation_45_1 -> tailings_45_1
+			heavy_media_separation_45_1 -> heavy_media_separation_45_1_output_1
+			heavy_media_separation_45_1_output_1 -> crushing_45_2
+			crushing_45_2 -> crushing_45_2_output_1 // TODO: can probably treat as fine crushed stibnite ore
+			crushing_45_2_output_1 -> or_45_1
+			or_45_1 -> grinding_45_1
+			grinding_45_1 -> "Ground stibnite ore"
+			"Ground stibnite ore" -> froth_flotation_45_1
+			// TODO: other inputs to froth flotation
+			"Lead(II) nitrate" -> froth_flotation_45_1 [label="300 g/t"]
+			"Amyl xanthate" -> froth_flotation_45_1
+			frother_45_1 -> froth_flotation_45_1
+			froth_flotation_45_1 -> tailings_45_2
+			froth_flotation_45_1 -> "High grade stibnite concentrate"
+			// "Total recovery in the process is in the region of 80%
+			// Sb, and the final concentrate grades about 50% Sb."
+		}
+
+		// "Currently, more than three tons of standard coal is required to produce one ton of antimony in Xikuang-shan."
+
+		// ">3.6×10¹⁰ J/t Sb"
+
+		{
+			"High grade stibnite concentrate" -> pelletize_45_1
+			pelletize_45_1 -> "High grade stibnite concentrate pellets"
+			"High grade stibnite concentrate pellets" -> roasting_45_1
+			roasting_45_1 -> "Sulfur dioxide"
+			roasting_45_1 -> "Crude antimony(III) oxide"
+			roasting_45_1 -> slag_45_1
+			"Crude antimony(III) oxide" -> oxide_reduction_45_1 // in a reverberatory furnace at 1) "500-1000" 2) "1200" celsius
+			// Using sodium hydroxide for this is taken from
+			// https://patents.google.com/patent/CN1216162C/en –
+			// alternatively, it seems possible to use large amounts
+			// of soda ash, a lot of heat and a lot of time.
+			"Sodium hydroxide" -> oxide_reduction_45_1
+			// TODO: flux of soda, potash and sodium sulfate
+			// Charcoal, does coke work, too? or plain coal?
+			"Carbon" -> oxide_reduction_45_1
+			oxide_reduction_45_1 -> "Antimony" // 99.4% pure
+			oxide_reduction_45_1 -> "Carbon monoxide"
+			oxide_reduction_45_1 -> "Sodium arsenite"
+			// TODO: what other materials are used for forming the slag
+		}
+
+		// TODO: zone refining for 99.85% pure antimony
+		// TODO: electronics grade antimony
+
+		// TODO: not all stibnite ore is pure. some is contaminated
+		// with arsenic, other contains enough gold to make it worth
+		// extracting the gold. Antimony is also a contaminant in
+		// other ores, such as lead, iron and copper.
+
+		// Sources:
+		// Antimony production by carbothermic reduction of stibnite in the presence of lime - http://www.doiserbia.nb.rs/img/doi/1450-5339/2014/1450-53391400003P.pdf
+		// Antimony smelting process generating solid wastes and dust: Characterization and leaching behaviors - https://www.sciencedirect.com/science/article/abs/pii/S1001074214000308?via%3Dihub
+		// As-eliminating antimony refining process with NaoH - https://patents.google.com/patent/CN1986854A/en
+		// Beneficiation characteristics of antimony minerals a review- part 1 - https://www.sciencedirect.com/science/article/abs/pii/0892687589900022
+		// Current processing technology for antimony-bearing ores a review, part 2 - https://www.sciencedirect.com/science/article/abs/pii/0892687589900885
+		// Efficient Bath-Smelting Reduction of Antimony Oxide in FeO-SiO₂-CaO-Na₂O Quaternary Slag with Low Melting Point - https://link.springer.com/article/10.1007/s11837-018-3262-9?shared-article-renderer
+		// How Antimony is Processed by Flotation - https://www.911metallurgist.com/blog/antimony-ore-processed-flotation
+		// Improved Smelting and Refining Processes for Production of Antimony and Its Oxides in Xikuangshan, China. - https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB89112817.xhtml
+		// Lead and tin removal from antimony metal by refining processwith phosphorus compounds - http://www.metaljournal.com.ua/assets/Journal/english-edition/2Berdikulova-F.A..pdf
+		// Mechanism of stibnite volatilization at high temperature - http://www.zndxzk.com.cn/down/2015/03_znen/12-p0868-e132452.pdf
+		// Mineral Commodity Profiles: Antimony - https://pubs.usgs.gov/of/2003/of03-019/of03-019.pdf
+		// One-Step Extraction of Antimony in Low Temperature from Stibnite Concentrate Using Iron Oxide as Sulfur-Fixing Agent - https://www.mdpi.com/2075-4701/6/7/153/htm
+		// Process of purifying metallic antimony - https://patents.google.com/patent/US1662439A/en
+		// Purification of Antimony and Tin by a New Method of Zone Refining - https://link.springer.com/article/10.1007%2FBF03377423
+		// Removal of lead from crude antimony by using NaPO₃ as lead elimination reagent - http://www.doiserbia.nb.rs/img/doi/1450-5339/2015/1450-53391500011Y.pdf
+		// Separation of Antimony from a Stibnite Concentrate Through a Low-Temperature Smelting Process to Eliminate SO₂ Emission - https://link.springer.com/article/10.1007%2Fs11663-010-9453-6
+		// Sulfur fixation and reduction roasting of stibnite for clean extraction of antimony by a combined metallurgy and beneficiation process - https://www.sciencedirect.com/science/article/abs/pii/S0892687519304601
+		// THE BENEFICIATION OF ANTIMONY ORE BY FLOTATION - https://www.researchgate.net/publication/263891418_THE_BENEFICIATION_OF_ANTIMONY_ORE_BY_FLOTATION
+		// The metallurgy of antimony - https://stuff.mit.edu/afs/athena/course/12/12.000/www/m2016/pdf/antimony.pdf
 	}
 }
 
