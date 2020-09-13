@@ -506,7 +506,7 @@
    https://en.wikipedia.org/wiki/IsaMill
    https://www.ausetute.com.au/smeltcu.html
    https://core.ac.uk/download/pdf/48313603.pdf
-   https://patentimages.storage.googleapis.com/97/9f/78/bd4f0b31959631/US3751240.pdf
+   https://patents.google.com/patent/US3751240A
 ** Random notes
    Isalmelt:
 	 - ~60% Cu in matte
