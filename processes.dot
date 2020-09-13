@@ -675,7 +675,7 @@ digraph {
 		// TODO: "https://en.wikipedia.org/wiki/Capacitor_types"
 		// TODO: "https://en.wikipedia.org/wiki/Inductor#Types"
 
-		// https://link.springer.com/chapter/10.1007/978-3-319-48933-9_29
+		// https://doi.org/10.1007/978-3-319-48933-9_29
 
 		n_13_1 [label="...", fillcolor=blue, style=filled]
 		n_13_2 [label="...", fillcolor=blue, style=filled]
@@ -1660,7 +1660,7 @@ digraph {
 		delayed_coker_31_1 -> "Petroleum coke" [label="contains some sulfur"]
 		delayed_coker_31_1 -> "Cracked gas" [label="contains some sulfur"]
 
-		// https://www.researchgate.net/publication/245060487_Experimental_study_and_kinetic_modeling_of_kerosene_thermal_cracking
+		// https://doi.org/10.1016/j.jaap.2009.06.006
 		"Kerosene" -> or_31_1
 		"Fraction: Kerosene" -> or_31_1
 		or_31_1 -> steam_cracking_31_5
@@ -1918,7 +1918,7 @@ digraph {
 		// https://www.britannica.com/technology/lead-processing/Mining-and-concentrating
 		// https://en.wikipedia.org/wiki/Betterton%E2%80%93Kroll_process
 		// https://www.britannica.com/technology/lead-processing/Refining#ref82082
-		// https://link.springer.com/content/pdf/10.1007/BF01052570.pdf
+		// The refining of lead by the Betts process - https://doi.org/10.1007/BF01052570
 	}
 
 	// Refining the silver and gold we get from refining lead
@@ -2299,25 +2299,25 @@ digraph {
 		// other ores, such as lead, iron and copper.
 
 		// Sources:
-		// Antimony production by carbothermic reduction of stibnite in the presence of lime - http://www.doiserbia.nb.rs/img/doi/1450-5339/2014/1450-53391400003P.pdf
-		// Antimony smelting process generating solid wastes and dust: Characterization and leaching behaviors - https://www.sciencedirect.com/science/article/abs/pii/S1001074214000308?via%3Dihub
+		// Antimony production by carbothermic reduction of stibnite in the presence of lime - https://doi.org/10.2298/JMMB130604003P
+		// Antimony smelting process generating solid wastes and dust: Characterization and leaching behaviors - https://doi.org/10.1016/j.jes.2014.05.022
 		// As-eliminating antimony refining process with NaoH - https://patents.google.com/patent/CN1986854A/en
-		// Beneficiation characteristics of antimony minerals a review- part 1 - https://www.sciencedirect.com/science/article/abs/pii/0892687589900022
-		// Current processing technology for antimony-bearing ores a review, part 2 - https://www.sciencedirect.com/science/article/abs/pii/0892687589900885
-		// Efficient Bath-Smelting Reduction of Antimony Oxide in FeO-SiO₂-CaO-Na₂O Quaternary Slag with Low Melting Point - https://link.springer.com/article/10.1007/s11837-018-3262-9?shared-article-renderer
+		// Beneficiation characteristics of antimony minerals a review- part 1 - https://doi.org/10.1016/0892-6875(89)90002-2
+		// Current processing technology for antimony-bearing ores a review, part 2 - https://doi.org/10.1016/0892-6875(89)90088-5
+		// Efficient Bath-Smelting Reduction of Antimony Oxide in FeO-SiO₂-CaO-Na₂O Quaternary Slag with Low Melting Point - https://doi.org/10.1007/s11837-018-3262-9
 		// How Antimony is Processed by Flotation - https://www.911metallurgist.com/blog/antimony-ore-processed-flotation
 		// Improved Smelting and Refining Processes for Production of Antimony and Its Oxides in Xikuangshan, China. - https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB89112817.xhtml
 		// Lead and tin removal from antimony metal by refining processwith phosphorus compounds - http://www.metaljournal.com.ua/assets/Journal/english-edition/2Berdikulova-F.A..pdf
-		// Mechanism of stibnite volatilization at high temperature - http://www.zndxzk.com.cn/down/2015/03_znen/12-p0868-e132452.pdf
+		// Mechanism of stibnite volatilization at high temperature - https://doi.org/10.1007/s11771-015-2595-6
 		// Mineral Commodity Profiles: Antimony - https://pubs.usgs.gov/of/2003/of03-019/of03-019.pdf
 		// One-Step Extraction of Antimony in Low Temperature from Stibnite Concentrate Using Iron Oxide as Sulfur-Fixing Agent - https://www.mdpi.com/2075-4701/6/7/153/htm
 		// Process of purifying metallic antimony - https://patents.google.com/patent/US1662439A/en
-		// Purification of Antimony and Tin by a New Method of Zone Refining - https://link.springer.com/article/10.1007%2FBF03377423
-		// Removal of lead from crude antimony by using NaPO₃ as lead elimination reagent - http://www.doiserbia.nb.rs/img/doi/1450-5339/2015/1450-53391500011Y.pdf
-		// Separation of Antimony from a Stibnite Concentrate Through a Low-Temperature Smelting Process to Eliminate SO₂ Emission - https://link.springer.com/article/10.1007%2Fs11663-010-9453-6
-		// Sulfur fixation and reduction roasting of stibnite for clean extraction of antimony by a combined metallurgy and beneficiation process - https://www.sciencedirect.com/science/article/abs/pii/S0892687519304601
+		// Purification of Antimony and Tin by a New Method of Zone Refining - https://doi.org/10.1007/BF03377423
+		// Removal of lead from crude antimony by using NaPO₃ as lead elimination reagent - https://doi.org/10.2298/JMMB130904011Y
+		// Separation of Antimony from a Stibnite Concentrate Through a Low-Temperature Smelting Process to Eliminate SO₂ Emission - https://doi.org/10.1007/s11663-010-9453-6
+		// Sulfur fixation and reduction roasting of stibnite for clean extraction of antimony by a combined metallurgy and beneficiation process - https://doi.org/10.1016/j.mineng.2019.106049
 		// THE BENEFICIATION OF ANTIMONY ORE BY FLOTATION - https://www.researchgate.net/publication/263891418_THE_BENEFICIATION_OF_ANTIMONY_ORE_BY_FLOTATION
-		// The metallurgy of antimony - https://stuff.mit.edu/afs/athena/course/12/12.000/www/m2016/pdf/antimony.pdf
+		// The metallurgy of antimony - https://doi.org/10.1016/j.chemer.2012.04.001
 	}
 }
 
