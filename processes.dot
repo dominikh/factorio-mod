@@ -27,6 +27,7 @@ digraph {
 	"Carbon monoxide"                  [label="Carbon monoxide\nCO"                                                                     ]
 	"Carbon"                           [label="Carbon\nC"                                                                               ]
 	"Carnallite"                       [                                                  fillcolor=brown, style=filled                 ]
+	"Galena"                           [                                                  fillcolor=brown, style=filled                 ]
 	"Cellulose"                        [label="Cellulose\n(C₆H₁₀O₅)ₙ"                                                                   ]
 	"Chalk"                            [                                                  fillcolor=brown, style=filled                 ]
 	"Chlorine"                         [label="Chlorine\nCl"                                                                            ]
@@ -1851,6 +1852,7 @@ digraph {
 		"Pine oil" -> froth_flotation_39_1
 		"Potassium amyl xanthate" -> froth_flotation_39_1
 		// TODO: anything useful in the gangue?
+		froth_flotation_39_1 -> gangue_39_1
 		froth_flotation_39_1 -> "Lead sulfide concentrate"
 
 		"Lead sulfide concentrate" -> roasting_39_1
@@ -1861,6 +1863,7 @@ digraph {
 		// TODO: does it have to be coke?
 		"Coke" -> blast_furnace_39_1
 		blast_furnace_39_1 -> "Lead bullion" [headlabel="(l)"]
+		blast_furnace_39_1 -> "Carbon dioxide" [headlabel="(g)"]
 
 		"Lead bullion" -> drossing_39_1 [taillabel="(l)"]
 		drossing_39_1 -> dross_39_1
