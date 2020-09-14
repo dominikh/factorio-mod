@@ -2319,6 +2319,107 @@ digraph {
 		// THE BENEFICIATION OF ANTIMONY ORE BY FLOTATION - https://www.researchgate.net/publication/263891418_THE_BENEFICIATION_OF_ANTIMONY_ORE_BY_FLOTATION
 		// The metallurgy of antimony - https://doi.org/10.1016/j.chemer.2012.04.001
 	}
+
+	// Chlorine, hydrogen, sodium hydroxide
+	subgraph cluster_111 {
+		node [fillcolor=yellow, style=filled]
+
+		// "The process has a high energy consumption, for example
+		// around 2500 kWh of electricity per tonne of sodium
+		// hydroxide produced"
+		//
+		// "the process yields equivalent amounts of chlorine and
+		// sodium hydroxide (two moles of sodium hydroxide per mole of
+		// chlorine)"
+		//
+		// "For every mole of chlorine produced, one mole of hydrogen
+		// is produced"
+
+		// There are three processes: mercury cell, membrane cell and
+		// diaphragm cell.
+		//
+		// Mercury cell pollutes the environment, produces sodium
+		// hydroxide free of chlorine, but contaminates chlorine and
+		// sodium hydroxide with trace amounts of mercury.
+		//
+		// Membrane and diaphragm produce sodium hydroxide that is
+		// contaminated with chlorine.
+
+		// TODO: wikipedia says that the membrane cell produces sodium
+		// hydroxide contaminated with chlorine. Another source says
+		// that chloride ions can't pass to the side containing sodium
+		// hydroxide…
+
+		// TODO: why is the diaphragm cell considered better than the
+		// membrane cell?
+
+		// "uses an enormous quantity of electricity: 3 MWh per ton Cl2."
+
+		membrane_cell_46_1 [shape="rect"]
+		diaphragm_cell_46_1 [shape="rect"]
+		evaporate_46_1 [shape="rect"]
+		mercury_cell_46_1 [shape="rect"]
+
+		// TODO: https://en.wikipedia.org/wiki/Weldon_process
+		// TODO: https://en.wikipedia.org/wiki/Deacon_process
+		// TODO: https://en.wikipedia.org/wiki/Leblanc_process -> sodium carbonate + calcium hydroxide = sodium hydroxide
+		// TODO: https://en.wikipedia.org/wiki/Solvay_process  -> sodium carbonate + calcium hydroxide = sodium hydroxide
+
+		// Membrane cell
+		{
+			// TODO the water must be pure
+			"Sodium chloride" -> membrane_cell_46_1 [taillabel="(aq)"]
+			"Water" -> membrane_cell_46_1 [taillabel="(l)"]
+			// The chlorine is contaminated with some oxygen but is
+			// easy to clean by liquifying the chlorine. We don't
+			// explicitly model this step.
+			membrane_cell_46_1 -> "Chlorine" [headlabel="(g)"]
+			membrane_cell_46_1 -> "Hydrogen" [headlabel="(g)"]
+			membrane_cell_46_1 -> "Sodium hydroxide" [label="30% solution", headlabel="(aq)"]
+		}
+
+		// Diaphragm cell
+		{
+			"Sodium chloride" -> diaphragm_cell_46_1 [taillabel="(aq)"]
+			// The chlorine is contaminated with some oxygen but is
+			// easy to clean by liquifying the chlorine. We don't
+			// explicitly model this step.
+			diaphragm_cell_46_1 -> "Chlorine" [headlabel="(g)"]
+			diaphragm_cell_46_1 -> "Hydrogen" [headlabel="(g)"]
+			diaphragm_cell_46_1 -> "Dilute sodium hydroxide, contaminated with sodium chloride" [headlabel="(aq)"]
+			"Dilute sodium hydroxide, contaminated with sodium chloride" -> evaporate_46_1
+			evaporate_46_1 -> "Sodium chloride" [headlabel="(s)"]
+			evaporate_46_1 -> "Sodium hydroxide with a small percentage of sodium chloride" [headlabel="(s)"]
+		}
+
+		// Chlorine cell / Castner-Kellner process
+		{
+			// "This method only produces a fraction of the chlorine
+			// and sodium hydroxide used by industry as it has certain
+			// disadvantages: mercury is expensive and toxic, and
+			// whilst it is recirculated, some always escapes with the
+			// spent brine with which it reacts to form mercury(II)
+			// chloride."
+
+			"Sodium chloride" -> mercury_cell_46_1 [taillabel="(aq)"]
+			"Sodium hydroxide" -> mercury_cell_46_1 [taillabel="(aq)"]
+			"Mercury" -> mercury_cell_46_1 [taillabel="(l)"]
+			mercury_cell_46_1 -> "Chlorine contaminated with mercury" [headlabel="(g)"]
+			mercury_cell_46_1 -> "Mercury Sodium amalgam" [headlabel="(l)"]
+
+			// This process needs graphite as a catalyst
+			"Mercury Sodium amalgam" -> some_process_46_1
+			some_process_46_1 -> "Sodium hydroxide contaminated with mercury" [headlabel="(aq)"]
+			some_process_46_1 -> "Hydrogen" [headlabel="(g)"]
+			some_process_46_1 -> "Mercury" [headlabel="(l)"]
+		}
+
+		// Sources:
+		// https://old.iupac.org/didac/Didac%20Eng/Didac03/Content/R18%20-%20R19.htm
+		// https://www.chemguide.co.uk/inorganic/group7/diaphragmcell.html
+		// https://vula.uct.ac.za/access/content/group/9eafe770-4c41-4742-a414-0df36366abe6/Chem%20Ind%20Resource%20Pack/html/learner-sheets/C/LS_C8.pdf
+		// Electrode Processes and Electrochemical Engineering - https://doi.org/10.1007/978-1-4757-0109-8
+	}
 }
 
 // TODO: ethanol from ethylene
